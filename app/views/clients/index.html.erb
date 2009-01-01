@@ -1,17 +1,7 @@
-<br/>
-<h1>Клиенты (<%= link_to image_tag("create.png"), new_client_path %>)</h1>
 
-<% for client in @clients %>
-<p>
-<h2><%= link_to h(client.title), client_path(client)%> (<%= link_to image_tag("edit.png"), edit_client_path(client) %> | <%= link_to image_tag("delete.png"), client, :confirm => 'Are you sure?', :method => :delete %>)</h2>  
-<%=cut_text client.content, client_path(client) %>
-<% client.tag_counts.each do |tag|%>
-	<%=link_to h(tag.name), tag_client_path(tag.name), :class=>"tag"%>
-<%end unless client.tag_counts.nil? %>
-</p>   
 <br/>
-<% end %>
-<p>
-	<%=will_paginate @clients%>
-</p>
 
+<h1>Клиенты  (<%= link_to image_tag("edit.png"), edit_client_path(@client) %>)</h1>
+
+</br>
+<p><%=@client.content%></p>

@@ -1,17 +1,6 @@
 <br/>
-<h1>О компании (<%= link_to image_tag("create.png"), new_about_path %>)</h1>
 
-<% for about in @abouts %>
-<p>
-<h2><%= link_to h(about.title), about_path(about)%> (<%= link_to image_tag("edit.png"), edit_about_path(about) %> | <%= link_to image_tag("delete.png"), about, :confirm => 'Are you sure?', :method => :delete %>)</h2>  
-<%=cut_text about.content, about_path(about) %>
-<% about.tag_counts.each do |tag|%>
-	<%=link_to h(tag.name), tag_about_path(tag.name), :class=>"tag"%>
-<%end unless about.tag_counts.nil? %>
-</p>   
-<br/>
-<% end %>
-<p>
-	<%=will_paginate @abouts%>
-</p>
+<h1>О компании  (<%= link_to image_tag("edit.png"), edit_about_path(@about) %>)</h1>
 
+</br>
+<p><%=@about.content%></p>

@@ -1,5 +1,6 @@
 <br/>
-<h1>Контакты</h1>
+<h1>Контакты  (<%= link_to image_tag("edit.png"), edit_contact_path(@contact) %>)</h1>
 
 </br>
+<p><%=@contact.content%></p>
 <%=image_tag "karta_proezda.gif"%>
