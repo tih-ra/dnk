@@ -13,7 +13,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :clients, :member => { :tag => :get }
   map.resources :portfolios, :member => { :tag => :get }
   map.resources :products, :member => { :tag => :get }
-  map.resources :maps
+  map.resources :maps, :member => {:list => :get}
   map.resources :contacts
   map.resources :minibanners
   

@@ -1,0 +1,8 @@
+xml.instruct!
+xml.maps do
+  @maps.each do |m|
+    xml.map "city"=>m.city do
+      xml.description(m.content)
+    end  
+  end
+end

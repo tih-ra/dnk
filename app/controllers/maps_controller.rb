@@ -14,4 +14,10 @@ class MapsController < ApplicationController
     @map.save
     redirect_to edit_map_path(1)
   end
+  def list
+    @maps = Citymap.all
+    respond_to do |format|
+      format.xml  { }
+    end
+  end
 end
