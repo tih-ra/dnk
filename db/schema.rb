@@ -19,7 +19,14 @@ ActiveRecord::Schema.define(:version => 20090121013632) do
   end
 
   create_table "bigbords", :force => true do |t|
-    t.text     "content"
+    t.integer  "parent_id",    :limit => 11
+    t.string   "content_type"
+    t.string   "filename"
+    t.string   "thumbnail"
+    t.integer  "size",         :limit => 11
+    t.integer  "width",        :limit => 11
+    t.integer  "height",       :limit => 11
+    t.string   "title"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

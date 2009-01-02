@@ -24,9 +24,11 @@ class AboutsController < ApplicationController
     @about.save
     redirect_to abouts_path
   end
-  
-  def update_bigbord
-    @bigbord.update_attributes(params[:bigbord])
+  def edit
+    @bigbord = Bigbord.new
+  end
+  def create
+    @bigbord = Bigbord.new(params[:bigbord])
     @bigbord.save
     redirect_to abouts_path
   end
@@ -34,7 +36,7 @@ class AboutsController < ApplicationController
   private 
   def find_about
    @about = About.find_or_create_by_id(1)
-   @bigbord = Bigbord.find_or_create_by_id(1)
+   @bigbord = Bigbord.last
   end
   
 end

@@ -1,11 +1,11 @@
-<h1>Редактировать бигборд</h1><br/>
+<h1>Редактировать бигборд (1001px X 260px)</h1><br/>
 
-<% form_for :bigbord, @bigbord, :url=>"/abouts/update_bigbord/1" do |f| %>
+<% form_for :bigbord, :url=>abouts_path, :html => { :multipart => true } do |f| %>
   <%= f.error_messages %>
 
   <p>
-    <%= f.label "Содержание" %><br />
-    <%= f.text_area :content, :style=>"width:700px;height:220px" %>
+    <%= f.label "Файл" %><br />
+    <%= f.file_field :uploaded_data %>
   </p>
   
   <p>
