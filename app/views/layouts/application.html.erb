@@ -9,11 +9,11 @@
 		<div class="column span-6 last">
 			<br/>
 			<br/>
-		(<%= link_to "Добавить банер"+image_tag("create.png"), new_minibanner_path %>)<br/>
+		<%=createbanner_link(new_minibanner_path) %><br/>
 		<% @minibanners = Minibanner.all%>
 		<% @minibanners.each do |minibanner|%>
 		  <%=link_to image_tag(minibanner.public_filename), minibanner.link unless minibanner.filename.nil? || minibanner.link.nil? %>
-		  <%=link_to image_tag("delete.png"), minibanner, :confirm => 'Are you sure?', :method => :delete %>
+		 <%=minidelete_link(minibanner)%>
 		<br/>
 		<% end unless @minibanners.empty?%>
 		</div>

@@ -1,8 +1,7 @@
 <p>
-<h2><%= link_to h(@product.title), product_path(@product)%> (<%= link_to image_tag("edit.png"), edit_product_path(@product) %> | <%= link_to image_tag("delete.png"), @product, :confirm => 'Are you sure?', :method => :delete %>)</h2>  
+<h2><span class="little"><%=@product.created_at.to_s(:little)%></span><br/><%= link_to h(@product.title), product_path(@product)%> <%= edit_delete_link(edit_blog_path(@product), @product) %></h2>  
 <%= @product.content %>
 </p>
 
 
-<%= link_to 'Редактировать', edit_product_path(@product) %> |
 <%= link_to 'Назад', products_path %>

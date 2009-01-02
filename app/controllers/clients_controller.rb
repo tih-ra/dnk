@@ -1,4 +1,5 @@
 class ClientsController < ApplicationController
+  before_filter :login_required, :only=>[:create, :update, :destroy]
   before_filter :find_client
   uses_tiny_mce(:options => {:theme => 'advanced',
                               #:browsers => %w{msie gecko safari},

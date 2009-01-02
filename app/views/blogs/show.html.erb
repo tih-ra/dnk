@@ -1,8 +1,8 @@
 <p>
-<h2><%= link_to h(@blog.title), blog_path(@blog)%> (<%= link_to image_tag("edit.png"), edit_blog_path(@blog) %> | <%= link_to image_tag("delete.png"), @blog, :confirm => 'Are you sure?', :method => :delete %>)</h2>  
+<h2><span class="little"><%=@blog.created_at.to_s(:little)%></span><br/><%= link_to h(@blog.title), blog_path(@blog)%> <%= edit_delete_link(edit_blog_path(@blog), @blog) %></h2>  
 <%= @blog.content %>
 </p>
 
 
-<%= link_to 'Редактировать', edit_blog_path(@blog) %> |
+
 <%= link_to 'Назад', blogs_path %>

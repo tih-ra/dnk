@@ -1,4 +1,5 @@
 class ProductsController < ApplicationController
+  before_filter :login_required, :only=>[:create, :update, :destroy]
   # GET /products
    # GET /products.xml
    uses_tiny_mce(:options => {:theme => 'advanced',

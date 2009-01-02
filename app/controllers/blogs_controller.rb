@@ -1,4 +1,5 @@
 class BlogsController < ApplicationController
+  before_filter :login_required, :only=>[:create, :update, :destroy]
   # GET /blogs
   # GET /blogs.xml
   uses_tiny_mce(:options => {:theme => 'advanced',

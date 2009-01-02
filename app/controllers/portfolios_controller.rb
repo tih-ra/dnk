@@ -1,4 +1,5 @@
 class PortfoliosController < ApplicationController
+  before_filter :login_required, :only=>[:create, :update, :destroy]
   # GET /portfolios
    # GET /portfolios.xml
    uses_tiny_mce(:options => {:theme => 'advanced',

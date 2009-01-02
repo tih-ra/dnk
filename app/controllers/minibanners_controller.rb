@@ -1,4 +1,5 @@
 class MinibannersController < ApplicationController
+  before_filter :login_required, :only=>[:create, :update, :destroy]
   def new
     @minibanner = Minibanner.new
   end

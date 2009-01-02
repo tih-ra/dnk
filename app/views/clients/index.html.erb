@@ -1,7 +1,7 @@
 
 <br/>
 
-<h1>Клиенты  (<%= link_to image_tag("edit.png"), edit_client_path(@client) %>)</h1>
+<h1>Клиенты  <%= edit_link(edit_client_path(@client)) %></h1>
 
 </br>
 <p><%=@client.content%></p>

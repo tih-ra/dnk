@@ -1,8 +1,7 @@
 <p>
-<h2><%= link_to h(@portfolio.title), portfolio_path(@portfolio)%> (<%= link_to image_tag("edit.png"), edit_portfolio_path(@portfolio) %> | <%= link_to image_tag("delete.png"), @portfolio, :confirm => 'Are you sure?', :method => :delete %>)</h2>  
+<h2><span class="little"><%=@portfolio.created_at.to_s(:little)%></span><br/><%= link_to h(@portfolio.title), portfolio_path(@portfolio)%> <%= edit_delete_link(edit_portfolio_path(@portfolio), @portfolio)%></h2>  
 <%= @portfolio.content %>
 </p>
 
 
-<%= link_to 'Редактировать', edit_portfolio_path(@portfolio) %> |
 <%= link_to 'Назад', portfolios_path %>

@@ -1,6 +1,6 @@
 <br/>
 
-<h1>О компании  (<%= link_to image_tag("edit.png"), edit_about_path(@about) %>)</h1>
+<h1>О компании  <%=edit_link(edit_about_path(@about))%></h1>
 
 </br>
 <p><%=@about.content%></p>

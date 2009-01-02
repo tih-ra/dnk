@@ -1,4 +1,5 @@
 class MapsController < ApplicationController
+  before_filter :login_required, :only=>[:create, :update, :destroy]
   def index
     Citymap::CITIES.each do |key|
       Citymap.find_or_create_by_city(key)

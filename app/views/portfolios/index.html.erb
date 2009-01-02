@@ -1,9 +1,9 @@
 <br/>
-<h1>Портфолио (<%= link_to image_tag("create.png"), new_portfolio_path %>)</h1>
+<h1>Портфолио <%= create_link(new_portfolio_path) %></h1>
 
 <% for portfolio in @portfolios %>
 <p>
-<h2><%= link_to h(portfolio.title), portfolio_path(portfolio)%> (<%= link_to image_tag("edit.png"), edit_portfolio_path(portfolio) %> | <%= link_to image_tag("delete.png"), portfolio, :confirm => 'Are you sure?', :method => :delete %>)</h2>  
+<h2><span class="little"><%=portfolio.created_at.to_s(:little)%></span><br/><%= link_to h(portfolio.title), portfolio_path(portfolio)%> <%= edit_delete_link(edit_portfolio_path(portfolio), portfolio)%></h2>  
 <%=cut_text portfolio.content, portfolio_path(portfolio) %>
 <% portfolio.tag_counts.each do |tag|%>
 	<%=link_to h(tag.name), tag_portfolio_path(tag.name), :class=>"tag"%>
