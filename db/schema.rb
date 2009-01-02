@@ -18,8 +18,21 @@ ActiveRecord::Schema.define(:version => 20090121013632) do
     t.datetime "updated_at"
   end
 
+  create_table "bigbords", :force => true do |t|
+    t.text     "content"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "blogs", :force => true do |t|
     t.string   "title"
+    t.text     "content"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "citymaps", :force => true do |t|
+    t.string   "city"
     t.text     "content"
     t.datetime "created_at"
     t.datetime "updated_at"

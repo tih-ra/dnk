@@ -1,9 +1,9 @@
 <%=render :partial => "includes/header"%>
 <div class="column span-24 first last">
 <div class="clear-10">&nbsp;</div>		
-		<div class="column span-24 bigboard"></div>
-		<div class="column span-17 first aligh-left" style="padding-left:25px;">
-		  	<%=yield%>
+		<%=content_tag "div", @bigbord.content, :class=>"column span-24 bigboard" if params[:controller]=="abouts"%>
+		<div class="column span-17 first" style="padding-left:25px;">
+			<%=yield%>
 				<div class="clear-10">&nbsp;</div>
 		</div>
 		<div class="column span-6 last">

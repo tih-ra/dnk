@@ -1,5 +1,36 @@
+
 <br/>
-<h1>Карта покрытия</h1>
+<h1>Карта покрытия (<%= link_to image_tag("edit.png"), edit_map_path(1) %>)</h1>
 <br/>
-<%=image_tag "ukraine_map.gif"%>
+<img src="/images/ukraine_map.gif" width="663" height="461" usemap="#ukraine_map" id="mapimg" border="0">
+<map name="ukraine_map">
+<area shape="rect" coords="417,430,435,446" onmouseover="new Tip(this, '<%=map_content_for("Севостополь")%>', {className:'silver'});" nohref>
+<area shape="rect" coords="438,406,459,425" onmouseover="new Tip(this, '<%=map_content_for("Симферополь")%>', {className:'silver'});" nohref>
+<area shape="rect" coords="624,190,643,212" onmouseover="new Tip(this, '<%=map_content_for("Кировоград")%>', {className:'silver'});" nohref>
+<area shape="rect" coords="566,229,589,247" onmouseover="new Tip(this, '<%=map_content_for("Луганск")%>', {className:'silver'});" nohref>
+<area shape="rect" coords="506,126,522,143" onmouseover="new Tip(this, '<%=map_content_for("Харьков")%>', {className:'silver'});" nohref>
+<area shape="rect" coords="476,248,492,265" onmouseover="new Tip(this, '<%=map_content_for("Запорожье")%>', {className:'silver'});" nohref>
+<area shape="rect" coords="383,318,400,336" onmouseover="new Tip(this, '<%=map_content_for("Херсон")%>', {className:'silver'});" nohref>
+<area shape="rect" coords="440,151,462,171" onmouseover="new Tip(this, '<%=map_content_for("Полтава")%>', {className:'silver'});" nohref>
+<area shape="rect" coords="461,218,480,237" onmouseover="new Tip(this, '<%=map_content_for("Днепропетровск")%>', {className:'silver'});" nohref>
+<area shape="rect" coords="355,299,372,316" onmouseover="new Tip(this, '<%=map_content_for("Николаев")%>', {className:'silver'});" nohref>
+<area shape="rect" coords="303,328,320,349" onmouseover="new Tip(this, '<%=map_content_for("Одесса")%>', {className:'silver'});" nohref>
+<area shape="rect" coords="364,216,389,237" onmouseover="new Tip(this, '<%=map_content_for("Кировоград")%>', {className:'silver'});" nohref>
+<area shape="rect" coords="354,157,374,175" onmouseover="new Tip(this, '<%=map_content_for("Черкассы")%>', {className:'silver'});" nohref>
+<area shape="rect" coords="445,80,465,102" onmouseover="new Tip(this, '<%=map_content_for("Сумы")%>', {className:'silver'});" nohref>
+<area shape="rect" coords="325,51,350,69" onmouseover="new Tip(this, '<%=map_content_for("Чернигов")%>', {className:'silver'});" nohref>
+<area shape="rect" coords="295,113,318,132" onmouseover="new Tip(this, '<%=map_content_for("Киев")%>', {className:'silver'});" nohref>
+<area shape="rect" coords="237,116,261,135" onmouseover="new Tip(this, '<%=map_content_for("Житомир")%>', {className:'silver'});" nohref>
+<area shape="rect" coords="224,170,251,191" onmouseover="new Tip(this, '<%=map_content_for("Винница")%>', {className:'silver'});" nohref>
+<area shape="rect" coords="171,161,192,181" onmouseover="new Tip(this, '<%=map_content_for("Хмельницкий")%>', {className:'silver'});" nohref>
+<area shape="rect" coords="125,147,142,166" onmouseover="new Tip(this, '<%=map_content_for("Тернополь")%>', {className:'silver'});" nohref>
+<area shape="rect" coords="132,217,153,238" onmouseover="new Tip(this, '<%=map_content_for("Черновцы")%>', {className:'silver'});" nohref>
+<area shape="rect" coords="87,182,106,201" onmouseover="new Tip(this, '<%=map_content_for("Ивано-Франковск")%>', {className:'silver'});" nohref>
+<area shape="rect" coords="5,191,27,214" onmouseover="new Tip(this, '<%=map_content_for("Ужгород")%>', {className:'silver'});" nohref>
+<area shape="rect" coords="62,126,87,148" onmouseover="new Tip(this, '<%=map_content_for("Львов")%>', {className:'silver'});" nohref>
+<area shape="rect" coords="151,94,172,117" onmouseover="new Tip(this, '<%=map_content_for("Ровно")%>', {className:'silver'});" nohref>
+<area shape="rect" coords="113,72,138,98" onmouseover="new Tip(this, '<%=map_content_for("Луцк")%>', {className:'silver'});" nohref>
+</map>
+<!-- End -->
+
 

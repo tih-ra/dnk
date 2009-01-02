@@ -1,7 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
-  map.root :controller => "welcome"
+  map.root :controller => "abouts"
   map.resources :blogs, :member => { :tag => :get }
-  map.resources :abouts, :member => { :tag => :get }
+  map.resources :abouts, :member => { :tag => :get, :update_bigbord => :put }
   map.resources :clients, :member => { :tag => :get }
   map.resources :portfolios, :member => { :tag => :get }
   map.resources :products, :member => { :tag => :get }
