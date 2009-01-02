@@ -1,0 +1,20 @@
+<h1>Создать Mini Banner</h1><br/>
+
+<% form_for :minibanner, :url=>minibanners_path, :html => { :multipart => true } do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label "URL" %><br />
+    <%= f.text_field :link, :style=>"width:400px" %>
+  </p>
+  <p>
+    <%= f.label "Файл" %><br />
+    <%= f.file_field :uploaded_data %>
+  </p>
+  
+  <p>
+    <%= f.submit "Сохранить" %>
+  </p>
+<% end %>
+
+<%= link_to 'Назад', "/" %>

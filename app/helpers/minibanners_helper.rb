@@ -1,0 +1,2 @@
+module MinibannersHelper
+end

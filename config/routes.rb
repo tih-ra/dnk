@@ -7,7 +7,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :products, :member => { :tag => :get }
   map.resources :maps
   map.resources :contacts
-  
+  map.resources :minibanners
   
   # The priority is based upon order of creation: first created -> highest priority.
 

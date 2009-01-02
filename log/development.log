@@ -28553,3 +28553,2354 @@ Rendered includes/_menu (0.00076)
 Rendered includes/_header (0.00316)
 Rendered includes/_footer (0.00001)
 Completed in 0.03168 (31 reqs/sec) | Rendering: 0.01142 (36%) | DB: 0.00760 (23%) | 200 OK [http://localhost/maps]
+  [4;36;1mSQL (0.000277)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000111)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000556)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000312)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000120)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000119)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000118)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000117)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000116)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000117)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000117)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000117)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000115)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateContacts (20090101211712)
+  [4;35;1mSQL (0.000124)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateBigbords (20090101223345)
+  [4;36;1mSQL (0.000139)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateCitymaps (20090102001642)
+  [4;35;1mSQL (0.000139)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateMinibanners (20090102013157)
+  [4;36;1mSQL (0.000113)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.014367)[0m   [0mCREATE TABLE `minibanners` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `parent_id` int(11) DEFAULT NULL NULL, `content_type` varchar(255) DEFAULT NULL NULL, `filename` varchar(255) DEFAULT NULL NULL, `thumbnail` varchar(255) DEFAULT NULL NULL, `size` int(11) DEFAULT NULL NULL, `width` int(11) DEFAULT NULL NULL, `height` int(11) DEFAULT NULL NULL, `link` varchar(255) DEFAULT NULL NULL, `created_at` datetime DEFAULT NULL NULL, `updated_at` datetime DEFAULT NULL NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.001131)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090102013157')[0m
+Migrating to CreateBlogs (20090108033547)
+  [4;35;1mSQL (0.000212)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to ActsAsTaggableMigration (20090120235108)
+  [4;36;1mSQL (0.000148)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateAbouts (20090121011028)
+  [4;35;1mSQL (0.000152)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateClients (20090121012853)
+  [4;36;1mSQL (0.000130)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePortfolios (20090121013213)
+  [4;35;1mSQL (0.000127)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateProducts (20090121013632)
+  [4;36;1mSQL (0.000106)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000273)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000358)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.003610)[0m   [0mSHOW FIELDS FROM `abouts`[0m
+  [4;36;1mSQL (0.001402)[0m   [0;1mdescribe `abouts`[0m
+  [4;35;1mSQL (0.000968)[0m   [0mSHOW KEYS FROM `abouts`[0m
+  [4;36;1mSQL (0.001435)[0m   [0;1mSHOW FIELDS FROM `bigbords`[0m
+  [4;35;1mSQL (0.003678)[0m   [0mdescribe `bigbords`[0m
+  [4;36;1mSQL (0.001384)[0m   [0;1mSHOW KEYS FROM `bigbords`[0m
+  [4;35;1mSQL (0.001807)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mSQL (0.001499)[0m   [0;1mdescribe `blogs`[0m
+  [4;35;1mSQL (0.001184)[0m   [0mSHOW KEYS FROM `blogs`[0m
+  [4;36;1mSQL (0.001252)[0m   [0;1mSHOW FIELDS FROM `citymaps`[0m
+  [4;35;1mSQL (0.002744)[0m   [0mdescribe `citymaps`[0m
+  [4;36;1mSQL (0.000854)[0m   [0;1mSHOW KEYS FROM `citymaps`[0m
+  [4;35;1mSQL (0.001277)[0m   [0mSHOW FIELDS FROM `clients`[0m
+  [4;36;1mSQL (0.001740)[0m   [0;1mdescribe `clients`[0m
+  [4;35;1mSQL (0.000792)[0m   [0mSHOW KEYS FROM `clients`[0m
+  [4;36;1mSQL (0.001025)[0m   [0;1mSHOW FIELDS FROM `contacts`[0m
+  [4;35;1mSQL (0.002075)[0m   [0mdescribe `contacts`[0m
+  [4;36;1mSQL (0.000782)[0m   [0;1mSHOW KEYS FROM `contacts`[0m
+  [4;35;1mSQL (0.054143)[0m   [0mSHOW FIELDS FROM `minibanners`[0m
+  [4;36;1mSQL (0.002600)[0m   [0;1mdescribe `minibanners`[0m
+  [4;35;1mSQL (0.000993)[0m   [0mSHOW KEYS FROM `minibanners`[0m
+  [4;36;1mSQL (0.001899)[0m   [0;1mSHOW FIELDS FROM `portfolios`[0m
+  [4;35;1mSQL (0.002033)[0m   [0mdescribe `portfolios`[0m
+  [4;36;1mSQL (0.001568)[0m   [0;1mSHOW KEYS FROM `portfolios`[0m
+  [4;35;1mSQL (0.001606)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mSQL (0.001969)[0m   [0;1mdescribe `products`[0m
+  [4;35;1mSQL (0.001364)[0m   [0mSHOW KEYS FROM `products`[0m
+  [4;36;1mSQL (0.001852)[0m   [0;1mSHOW FIELDS FROM `taggings`[0m
+  [4;35;1mSQL (0.002408)[0m   [0mdescribe `taggings`[0m
+  [4;36;1mSQL (0.000806)[0m   [0;1mSHOW KEYS FROM `taggings`[0m
+  [4;35;1mSQL (0.001402)[0m   [0mSHOW FIELDS FROM `tags`[0m
+  [4;36;1mSQL (0.001796)[0m   [0;1mdescribe `tags`[0m
+  [4;35;1mSQL (0.001061)[0m   [0mSHOW KEYS FROM `tags`[0m
+  [4;36;1mSQL (0.000225)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000073)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000453)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000292)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000144)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000133)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000125)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000124)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000122)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000120)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000122)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000120)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000146)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateContacts (20090101211712)
+  [4;35;1mSQL (0.000127)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateBigbords (20090101223345)
+  [4;36;1mSQL (0.000124)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateCitymaps (20090102001642)
+  [4;35;1mSQL (0.000122)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateMinibanners (20090102013157)
+  [4;36;1mSQL (0.000124)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateBlogs (20090108033547)
+  [4;35;1mSQL (0.000121)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to ActsAsTaggableMigration (20090120235108)
+  [4;36;1mSQL (0.000121)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateAbouts (20090121011028)
+  [4;35;1mSQL (0.000125)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateClients (20090121012853)
+  [4;36;1mSQL (0.000121)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePortfolios (20090121013213)
+  [4;35;1mSQL (0.000121)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateProducts (20090121013632)
+  [4;36;1mSQL (0.000107)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000180)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000337)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.001978)[0m   [0mSHOW FIELDS FROM `abouts`[0m
+  [4;36;1mSQL (0.001968)[0m   [0;1mdescribe `abouts`[0m
+  [4;35;1mSQL (0.000415)[0m   [0mSHOW KEYS FROM `abouts`[0m
+  [4;36;1mSQL (0.001374)[0m   [0;1mSHOW FIELDS FROM `bigbords`[0m
+  [4;35;1mSQL (0.002769)[0m   [0mdescribe `bigbords`[0m
+  [4;36;1mSQL (0.001426)[0m   [0;1mSHOW KEYS FROM `bigbords`[0m
+  [4;35;1mSQL (0.001392)[0m   [0mSHOW FIELDS FROM `blogs`[0m
+  [4;36;1mSQL (0.002437)[0m   [0;1mdescribe `blogs`[0m
+  [4;35;1mSQL (0.000534)[0m   [0mSHOW KEYS FROM `blogs`[0m
+  [4;36;1mSQL (0.001487)[0m   [0;1mSHOW FIELDS FROM `citymaps`[0m
+  [4;35;1mSQL (0.002840)[0m   [0mdescribe `citymaps`[0m
+  [4;36;1mSQL (0.001308)[0m   [0;1mSHOW KEYS FROM `citymaps`[0m
+  [4;35;1mSQL (0.001353)[0m   [0mSHOW FIELDS FROM `clients`[0m
+  [4;36;1mSQL (0.002156)[0m   [0;1mdescribe `clients`[0m
+  [4;35;1mSQL (0.001293)[0m   [0mSHOW KEYS FROM `clients`[0m
+  [4;36;1mSQL (0.001658)[0m   [0;1mSHOW FIELDS FROM `contacts`[0m
+  [4;35;1mSQL (0.002468)[0m   [0mdescribe `contacts`[0m
+  [4;36;1mSQL (0.000782)[0m   [0;1mSHOW KEYS FROM `contacts`[0m
+  [4;35;1mSQL (0.040066)[0m   [0mSHOW FIELDS FROM `minibanners`[0m
+  [4;36;1mSQL (0.002596)[0m   [0;1mdescribe `minibanners`[0m
+  [4;35;1mSQL (0.000903)[0m   [0mSHOW KEYS FROM `minibanners`[0m
+  [4;36;1mSQL (0.001784)[0m   [0;1mSHOW FIELDS FROM `portfolios`[0m
+  [4;35;1mSQL (0.002704)[0m   [0mdescribe `portfolios`[0m
+  [4;36;1mSQL (0.001859)[0m   [0;1mSHOW KEYS FROM `portfolios`[0m
+  [4;35;1mSQL (0.001717)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mSQL (0.001893)[0m   [0;1mdescribe `products`[0m
+  [4;35;1mSQL (0.000770)[0m   [0mSHOW KEYS FROM `products`[0m
+  [4;36;1mSQL (0.001684)[0m   [0;1mSHOW FIELDS FROM `taggings`[0m
+  [4;35;1mSQL (0.002017)[0m   [0mdescribe `taggings`[0m
+  [4;36;1mSQL (0.000445)[0m   [0;1mSHOW KEYS FROM `taggings`[0m
+  [4;35;1mSQL (0.001382)[0m   [0mSHOW FIELDS FROM `tags`[0m
+  [4;36;1mSQL (0.001660)[0m   [0;1mdescribe `tags`[0m
+  [4;35;1mSQL (0.000661)[0m   [0mSHOW KEYS FROM `tags`[0m
+
+
+Processing AboutsController#index (for 127.0.0.1 at 2009-01-02 03:47:50) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"action"=>"index", "controller"=>"abouts"}
+  [4;36;1mSQL (0.000242)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000102)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mAbout Columns (0.002629)[0m   [0;1mSHOW FIELDS FROM `abouts`[0m
+  [4;35;1mAbout Load (0.000278)[0m   [0mSELECT * FROM `abouts` WHERE (`abouts`.`id` = 1) LIMIT 1[0m
+  [4;36;1mBigbord Columns (0.002164)[0m   [0;1mSHOW FIELDS FROM `bigbords`[0m
+  [4;35;1mBigbord Load (0.000351)[0m   [0mSELECT * FROM `bigbords` WHERE (`bigbords`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering abouts/index
+Rendered includes/_menu (0.00153)
+Rendered includes/_header (0.00518)
+Rendered includes/_footer (0.00001)
+Completed in 0.03430 (29 reqs/sec) | Rendering: 0.01330 (38%) | DB: 0.00577 (16%) | 200 OK [http://localhost/abouts]
+
+
+Processing MinibannersController#new (for 127.0.0.1 at 2009-01-02 03:47:54) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"action"=>"new", "controller"=>"minibanners"}
+
+
+NameError (uninitialized constant MinibannersController::Minibaner):
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:492:in `const_missing'
+    /app/controllers/minibanners_controller.rb:3:in `new'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `perform_action_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing MinibannersController#new (for 127.0.0.1 at 2009-01-02 03:48:09) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"action"=>"new", "controller"=>"minibanners"}
+  [4;36;1mMinibanner Columns (0.002421)[0m   [0;1mSHOW FIELDS FROM `minibanners`[0m
+Rendering template within layouts/application
+Rendering minibanners/new
+ERROR: compiling _run_erb_47app47views47minibanners47new46html46erb RAISED compile error
+/Users/tih_ra/Documents/rails_prj/svn/dnk/app/views/minibanners/new.html.erb:3: syntax error, unexpected ',', expecting kEND
+ form_for(@minibanner), :html => { :multipart => true } do |f| ; _erbout.concat "\n"
+                       ^
+/Users/tih_ra/Documents/rails_prj/svn/dnk/app/views/minibanners/new.html.erb:3: syntax error, unexpected kDO, expecting kEND
+ form_for(@minibanner), :html => { :multipart => true } do |f| ; _erbout.concat "\n"
+                                                          ^
+/Users/tih_ra/Documents/rails_prj/svn/dnk/app/views/minibanners/new.html.erb:21: syntax error, unexpected kEND, expecting $end
+Function body: def _run_erb_47app47views47minibanners47new46html46erb(local_assigns)
+_erbout = ''; _erbout.concat "<h1>\320\241\320\276\320\267\320\264\320\260\321\202\321\214 Mini Banner</h1><br/>\n"
+_erbout.concat "\n"
+ form_for(@minibanner), :html => { :multipart => true } do |f| ; _erbout.concat "\n"
+_erbout.concat "  "; _erbout.concat(( f.error_messages ).to_s); _erbout.concat "\n"
+_erbout.concat "\n"
+_erbout.concat "  <p>\n"
+_erbout.concat "    "; _erbout.concat(( f.label "URL" ).to_s); _erbout.concat "<br />\n"
+_erbout.concat "    "; _erbout.concat(( f.text_field :link, :style=>"width:700px" ).to_s); _erbout.concat "\n"
+_erbout.concat "  </p>\n"
+_erbout.concat "  <p>\n"
+_erbout.concat "    "; _erbout.concat(( f.label "Файл" ).to_s); _erbout.concat "<br />\n"
+_erbout.concat "    "; _erbout.concat(( f.file_field :uploaded_data ).to_s); _erbout.concat "\n"
+_erbout.concat "  </p>\n"
+_erbout.concat "  \n"
+_erbout.concat "  <p>\n"
+_erbout.concat "    "; _erbout.concat(( f.submit "Сохранить" ).to_s); _erbout.concat "\n"
+_erbout.concat "  </p>\n"
+ end ; _erbout.concat "\n"
+_erbout.concat "\n"
+_erbout.concat(( link_to 'Назад', "/" ).to_s); _erbout
+end
+Backtrace: /Users/tih_ra/Documents/rails_prj/svn/dnk/app/views/minibanners/new.html.erb:21:in `compile_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:55:in `prepare!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:34:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:22:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:245:in `render_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1108:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:841:in `render_with_no_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/layout.rb:251:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1157:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1163:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+/Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+/Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/servers/mongrel.rb:64
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+/Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+script/server:3
+
+
+ActionView::TemplateError (compile error
+/Users/tih_ra/Documents/rails_prj/svn/dnk/app/views/minibanners/new.html.erb:3: syntax error, unexpected ',', expecting kEND
+ form_for(@minibanner), :html => { :multipart => true } do |f| ; _erbout.concat "\n"
+                       ^
+/Users/tih_ra/Documents/rails_prj/svn/dnk/app/views/minibanners/new.html.erb:3: syntax error, unexpected kDO, expecting kEND
+ form_for(@minibanner), :html => { :multipart => true } do |f| ; _erbout.concat "\n"
+                                                          ^
+/Users/tih_ra/Documents/rails_prj/svn/dnk/app/views/minibanners/new.html.erb:21: syntax error, unexpected kEND, expecting $end) on line #3 of minibanners/new.html.erb:
+1: <h1>Создать Mini Banner</h1><br/>
+2: 
+3: <% form_for(@minibanner), :html => { :multipart => true } do |f| %>
+4:   <%= f.error_messages %>
+5: 
+6:   <p>
+
+    app/views/minibanners/new.html.erb:21:in `compile_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:55:in `prepare!'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:34:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:22:in `render_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:245:in `render_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1108:in `render_for_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:841:in `render_with_no_layout'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/layout.rb:251:in `render_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1157:in `default_render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1163:in `perform_action_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:76:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing MinibannersController#new (for 127.0.0.1 at 2009-01-02 03:48:46) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"action"=>"new", "controller"=>"minibanners"}
+  [4;35;1mMinibanner Columns (0.003041)[0m   [0mSHOW FIELDS FROM `minibanners`[0m
+Rendering template within layouts/application
+Rendering minibanners/new
+Rendered includes/_menu (0.00152)
+Rendered includes/_header (0.00597)
+Rendered includes/_footer (0.00002)
+Completed in 0.06105 (16 reqs/sec) | Rendering: 0.01252 (20%) | DB: 0.00304 (4%) | 200 OK [http://localhost/minibanners/new]
+
+
+Processing MinibannersController#new (for 127.0.0.1 at 2009-01-02 03:48:56) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"action"=>"new", "controller"=>"minibanners"}
+  [4;36;1mMinibanner Columns (0.003445)[0m   [0;1mSHOW FIELDS FROM `minibanners`[0m
+Rendering template within layouts/application
+Rendering minibanners/new
+Rendered includes/_menu (0.00082)
+Rendered includes/_header (0.00296)
+Rendered includes/_footer (0.00001)
+Completed in 0.05726 (17 reqs/sec) | Rendering: 0.00664 (11%) | DB: 0.00345 (6%) | 200 OK [http://localhost/minibanners/new]
+
+
+Processing MinibannersController#new (for 127.0.0.1 at 2009-01-02 03:49:23) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"commit"=>"Сохранить", "minibanner"=>{"uploaded_data"=>#<ActionController::UploadedStringIO:0x1f660fc>, "link"=>"http://www.mail.tu"}, "authenticity_token"=>"e62d9eacd9377f6deb02a657f9974b4e7bbbb532", "action"=>"new", "controller"=>"minibanners"}
+  [4;35;1mMinibanner Columns (0.003175)[0m   [0mSHOW FIELDS FROM `minibanners`[0m
+Rendering template within layouts/application
+Rendering minibanners/new
+Rendered includes/_menu (0.00079)
+Rendered includes/_header (0.00308)
+Rendered includes/_footer (0.00001)
+Completed in 0.05625 (17 reqs/sec) | Rendering: 0.00571 (10%) | DB: 0.00318 (5%) | 200 OK [http://localhost/minibanners/new]
+
+
+Processing MinibannersController#new (for 127.0.0.1 at 2009-01-02 03:50:13) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"commit"=>"Сохранить", "minibanner"=>{"uploaded_data"=>#<ActionController::UploadedStringIO:0x2292ca8>, "link"=>"http://www.mail.tu"}, "authenticity_token"=>"e62d9eacd9377f6deb02a657f9974b4e7bbbb532", "action"=>"new", "controller"=>"minibanners"}
+  [4;36;1mMinibanner Columns (0.002175)[0m   [0;1mSHOW FIELDS FROM `minibanners`[0m
+Rendering template within layouts/application
+Rendering minibanners/new
+Rendered includes/_menu (0.00111)
+Rendered includes/_header (0.00365)
+Rendered includes/_footer (0.00001)
+Completed in 0.06132 (16 reqs/sec) | Rendering: 0.00757 (12%) | DB: 0.00218 (3%) | 200 OK [http://localhost/minibanners/new]
+
+
+Processing MinibannersController#new (for 127.0.0.1 at 2009-01-02 03:50:22) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"commit"=>"Сохранить", "minibanner"=>{"uploaded_data"=>#<ActionController::UploadedStringIO:0x24ca5d4>, "link"=>"http://www.mail.tu"}, "authenticity_token"=>"e62d9eacd9377f6deb02a657f9974b4e7bbbb532", "action"=>"new", "controller"=>"minibanners"}
+  [4;35;1mMinibanner Columns (0.002407)[0m   [0mSHOW FIELDS FROM `minibanners`[0m
+Rendering template within layouts/application
+Rendering minibanners/new
+Rendered includes/_menu (0.00099)
+Rendered includes/_header (0.00401)
+Rendered includes/_footer (0.00001)
+Completed in 0.05665 (17 reqs/sec) | Rendering: 0.00757 (13%) | DB: 0.00241 (4%) | 200 OK [http://localhost/minibanners/new]
+
+
+Processing MinibannersController#new (for 127.0.0.1 at 2009-01-02 03:51:50) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"commit"=>"Сохранить", "minibanner"=>{"uploaded_data"=>#<ActionController::UploadedStringIO:0x2183934>, "link"=>"http://www.mail.tu"}, "authenticity_token"=>"e62d9eacd9377f6deb02a657f9974b4e7bbbb532", "action"=>"new", "controller"=>"minibanners"}
+  [4;36;1mMinibanner Columns (0.002466)[0m   [0;1mSHOW FIELDS FROM `minibanners`[0m
+Rendering template within layouts/application
+Rendering minibanners/new
+
+
+ActionView::TemplateError (minibanner_url failed to generate from {:controller=>"minibanners", :action=>"show"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["minibanners", :id] - are they all satisfied?) on line #3 of minibanners/new.html.erb:
+1: <h1>Создать Mini Banner</h1><br/>
+2: 
+3: <% form_for :minibanner, :url=>minibanner_path, :html => { :multipart => true } do |f| %>
+4:   <%= f.error_messages %>
+5: 
+6:   <p>
+
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/route_set.rb:379:in `raise_named_route_error'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/route_set.rb:339:in `generate'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/url_rewriter.rb:131:in `rewrite_path'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/url_rewriter.rb:110:in `rewrite_url'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/url_rewriter.rb:88:in `rewrite'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:621:in `url_for'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/helpers/url_helper.rb:71:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/helpers/url_helper.rb:71:in `url_for'
+    (eval):17:in `minibanner_path'
+    app/views/minibanners/new.html.erb:3:in `_run_erb_47app47views47minibanners47new46html46erb'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `execute'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:35:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:22:in `render_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:245:in `render_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1108:in `render_for_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:841:in `render_with_no_layout'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/layout.rb:251:in `render_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1157:in `default_render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1163:in `perform_action_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:76:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing MinibannersController#new (for 127.0.0.1 at 2009-01-02 03:51:59) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"action"=>"new", "controller"=>"minibanners"}
+  [4;35;1mMinibanner Columns (0.002916)[0m   [0mSHOW FIELDS FROM `minibanners`[0m
+Rendering template within layouts/application
+Rendering minibanners/new
+
+
+ActionView::TemplateError (minibanner_url failed to generate from {:controller=>"minibanners", :action=>"show"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["minibanners", :id] - are they all satisfied?) on line #3 of minibanners/new.html.erb:
+1: <h1>Создать Mini Banner</h1><br/>
+2: 
+3: <% form_for :minibanner, :url=>minibanner_path, :html => { :multipart => true } do |f| %>
+4:   <%= f.error_messages %>
+5: 
+6:   <p>
+
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/route_set.rb:379:in `raise_named_route_error'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/route_set.rb:339:in `generate'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/url_rewriter.rb:131:in `rewrite_path'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/url_rewriter.rb:110:in `rewrite_url'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/url_rewriter.rb:88:in `rewrite'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:621:in `url_for'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/helpers/url_helper.rb:71:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/helpers/url_helper.rb:71:in `url_for'
+    (eval):17:in `minibanner_path'
+    app/views/minibanners/new.html.erb:3:in `_run_erb_47app47views47minibanners47new46html46erb'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `execute'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:35:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:22:in `render_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:245:in `render_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1108:in `render_for_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:841:in `render_with_no_layout'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/layout.rb:251:in `render_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1157:in `default_render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1163:in `perform_action_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:76:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing MinibannersController#new (for 127.0.0.1 at 2009-01-02 03:52:08) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"action"=>"new", "controller"=>"minibanners"}
+  [4;36;1mMinibanner Columns (0.002968)[0m   [0;1mSHOW FIELDS FROM `minibanners`[0m
+Rendering template within layouts/application
+Rendering minibanners/new
+Rendered includes/_menu (0.00114)
+Rendered includes/_header (0.00401)
+Rendered includes/_footer (0.00001)
+Completed in 0.05890 (16 reqs/sec) | Rendering: 0.00853 (14%) | DB: 0.00297 (5%) | 200 OK [http://localhost/minibanners/new]
+
+
+Processing MinibannersController#create (for 127.0.0.1 at 2009-01-02 03:52:16) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"commit"=>"Сохранить", "minibanner"=>{"uploaded_data"=>#<ActionController::UploadedStringIO:0x1fc8f54>, "link"=>"http://www.mail.tu"}, "authenticity_token"=>"e62d9eacd9377f6deb02a657f9974b4e7bbbb532", "action"=>"create", "controller"=>"minibanners"}
+  [4;35;1mMinibanner Columns (0.002581)[0m   [0mSHOW FIELDS FROM `minibanners`[0m
+
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.save):
+    /app/controllers/minibanners_controller.rb:7:in `create'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `perform_action_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing MinibannersController#new (for 127.0.0.1 at 2009-01-02 03:52:39) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"action"=>"new", "controller"=>"minibanners"}
+  [4;36;1mMinibanner Columns (0.003011)[0m   [0;1mSHOW FIELDS FROM `minibanners`[0m
+Rendering template within layouts/application
+Rendering minibanners/new
+Rendered includes/_menu (0.00131)
+Rendered includes/_header (0.00525)
+Rendered includes/_footer (0.00001)
+Completed in 0.05903 (16 reqs/sec) | Rendering: 0.01138 (19%) | DB: 0.00559 (9%) | 200 OK [http://localhost/minibanners/new]
+
+
+Processing MinibannersController#create (for 127.0.0.1 at 2009-01-02 03:52:46) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"commit"=>"Сохранить", "minibanner"=>{"uploaded_data"=>#<ActionController::UploadedStringIO:0x1fc42c4>, "link"=>"http://www.mail.tu"}, "authenticity_token"=>"e62d9eacd9377f6deb02a657f9974b4e7bbbb532", "action"=>"create", "controller"=>"minibanners"}
+  [4;35;1mMinibanner Columns (0.002631)[0m   [0mSHOW FIELDS FROM `minibanners`[0m
+  [4;36;1mSQL (0.000467)[0m   [0;1mBEGIN[0m
+  [4;35;1mMinibanner Create (0.000311)[0m   [0mINSERT INTO `minibanners` (`content_type`, `thumbnail`, `size`, `updated_at`, `filename`, `height`, `link`, `parent_id`, `width`, `created_at`) VALUES(NULL, NULL, NULL, '2009-01-02 01:52:46', NULL, NULL, NULL, NULL, NULL, '2009-01-02 01:52:46')[0m
+  [4;36;1mSQL (0.000704)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed in 0.05441 (18 reqs/sec) | DB: 0.00411 (7%) | 302 Found [http://localhost/minibanners]
+
+
+Processing AboutsController#index (for 127.0.0.1 at 2009-01-02 03:52:46) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"action"=>"index", "controller"=>"abouts"}
+  [4;35;1mAbout Columns (0.002087)[0m   [0mSHOW FIELDS FROM `abouts`[0m
+  [4;36;1mAbout Load (0.000324)[0m   [0;1mSELECT * FROM `abouts` WHERE (`abouts`.`id` = 1) LIMIT 1[0m
+  [4;35;1mBigbord Columns (0.001397)[0m   [0mSHOW FIELDS FROM `bigbords`[0m
+  [4;36;1mBigbord Load (0.000582)[0m   [0;1mSELECT * FROM `bigbords` WHERE (`bigbords`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering abouts/index
+Rendered includes/_menu (0.00140)
+Rendered includes/_header (0.00359)
+Rendered includes/_footer (0.00001)
+Completed in 0.02352 (42 reqs/sec) | Rendering: 0.00661 (28%) | DB: 0.00439 (18%) | 200 OK [http://localhost/]
+
+
+Processing MinibannersController#new (for 127.0.0.1 at 2009-01-02 03:53:38) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"action"=>"new", "controller"=>"minibanners"}
+  [4;35;1mMinibanner Columns (0.003151)[0m   [0mSHOW FIELDS FROM `minibanners`[0m
+Rendering template within layouts/application
+Rendering minibanners/new
+Rendered includes/_menu (0.00084)
+Rendered includes/_header (0.00473)
+Rendered includes/_footer (0.00001)
+Completed in 0.05861 (17 reqs/sec) | Rendering: 0.01015 (17%) | DB: 0.00315 (5%) | 200 OK [http://localhost/minibanners/new]
+
+
+Processing MinibannersController#create (for 127.0.0.1 at 2009-01-02 03:53:45) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"commit"=>"Сохранить", "minibanner"=>{"uploaded_data"=>#<ActionController::UploadedStringIO:0x251c71c>, "link"=>"http://www.mail.tu"}, "authenticity_token"=>"e62d9eacd9377f6deb02a657f9974b4e7bbbb532", "action"=>"create", "controller"=>"minibanners"}
+  [4;36;1mMinibanner Columns (0.003019)[0m   [0;1mSHOW FIELDS FROM `minibanners`[0m
+  [4;35;1mSQL (0.000180)[0m   [0mBEGIN[0m
+  [4;36;1mMinibanner Create (0.000446)[0m   [0;1mINSERT INTO `minibanners` (`content_type`, `thumbnail`, `size`, `updated_at`, `filename`, `height`, `link`, `parent_id`, `width`, `created_at`) VALUES('image/jpeg', NULL, 14710, '2009-01-02 01:53:46', 'pt.jpg', 98, 'http://www.mail.tu', NULL, 225, '2009-01-02 01:53:46')[0m
+  [4;35;1mSQL (0.000805)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed in 0.22114 (4 reqs/sec) | DB: 0.00445 (2%) | 302 Found [http://localhost/minibanners]
+
+
+Processing AboutsController#index (for 127.0.0.1 at 2009-01-02 03:53:46) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"action"=>"index", "controller"=>"abouts"}
+  [4;36;1mAbout Columns (0.007221)[0m   [0;1mSHOW FIELDS FROM `abouts`[0m
+  [4;35;1mAbout Load (0.000653)[0m   [0mSELECT * FROM `abouts` WHERE (`abouts`.`id` = 1) LIMIT 1[0m
+  [4;36;1mBigbord Columns (0.002012)[0m   [0;1mSHOW FIELDS FROM `bigbords`[0m
+  [4;35;1mBigbord Load (0.000282)[0m   [0mSELECT * FROM `bigbords` WHERE (`bigbords`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering abouts/index
+Rendered includes/_menu (0.00172)
+Rendered includes/_header (0.00404)
+Rendered includes/_footer (0.00001)
+Completed in 0.02998 (33 reqs/sec) | Rendering: 0.00708 (23%) | DB: 0.01017 (33%) | 200 OK [http://localhost/]
+
+
+Processing AboutsController#index (for 127.0.0.1 at 2009-01-02 03:56:19) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"action"=>"index", "controller"=>"abouts"}
+  [4;36;1mAbout Columns (0.002467)[0m   [0;1mSHOW FIELDS FROM `abouts`[0m
+  [4;35;1mAbout Load (0.000311)[0m   [0mSELECT * FROM `abouts` WHERE (`abouts`.`id` = 1) LIMIT 1[0m
+  [4;36;1mBigbord Columns (0.001594)[0m   [0;1mSHOW FIELDS FROM `bigbords`[0m
+  [4;35;1mBigbord Load (0.000459)[0m   [0mSELECT * FROM `bigbords` WHERE (`bigbords`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering abouts/index
+Rendered includes/_menu (0.00080)
+Rendered includes/_header (0.00296)
+  [4;36;1mMinibanner Load (0.000282)[0m   [0;1mSELECT * FROM `minibanners` [0m
+  [4;35;1mMinibanner Columns (0.002673)[0m   [0mSHOW FIELDS FROM `minibanners`[0m
+
+
+ActionView::TemplateError (can't convert nil into String) on line #15 of layouts/application.html.erb:
+12: 		(<%= link_to "Добавить банер"+image_tag("create.png"), new_minibanner_path %>)
+13: 		<%=@minibanners = Minibanner.all%>
+14: 		<% @minibanners.each do |minibanner|%>
+15: 		  <%=link_to image_tag(minibanner.public_filename), minibanner.link unless minibanner.public_filename.nil? %>
+16: 		<% end unless @minibanners.empty?%>
+17: 		</div>
+18: </div>
+
+    vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu/backends/file_system_backend.rb:21:in `join'
+    vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu/backends/file_system_backend.rb:21:in `full_filename'
+    vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu/backends/file_system_backend.rb:47:in `public_filename'
+    app/views/layouts/application.html.erb:15:in `_run_erb_47app47views47layouts47application46html46erb'
+    app/views/layouts/application.html.erb:14:in `each'
+    app/views/layouts/application.html.erb:14:in `_run_erb_47app47views47layouts47application46html46erb'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `execute'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:35:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:22:in `render_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:245:in `render_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/layout.rb:257:in `render_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1157:in `default_render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1168:in `perform_action_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:76:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing AboutsController#index (for 127.0.0.1 at 2009-01-02 03:56:58) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"action"=>"index", "controller"=>"abouts"}
+  [4;36;1mAbout Columns (0.002425)[0m   [0;1mSHOW FIELDS FROM `abouts`[0m
+  [4;35;1mAbout Load (0.000300)[0m   [0mSELECT * FROM `abouts` WHERE (`abouts`.`id` = 1) LIMIT 1[0m
+  [4;36;1mBigbord Columns (0.001399)[0m   [0;1mSHOW FIELDS FROM `bigbords`[0m
+  [4;35;1mBigbord Load (0.000549)[0m   [0mSELECT * FROM `bigbords` WHERE (`bigbords`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering abouts/index
+Rendered includes/_menu (0.00076)
+Rendered includes/_header (0.00293)
+  [4;36;1mMinibanner Load (0.000288)[0m   [0;1mSELECT * FROM `minibanners` [0m
+  [4;35;1mMinibanner Columns (0.002290)[0m   [0mSHOW FIELDS FROM `minibanners`[0m
+
+
+ActionView::TemplateError (can't convert nil into String) on line #15 of layouts/application.html.erb:
+12: 		(<%= link_to "Добавить банер"+image_tag("create.png"), new_minibanner_path %>)
+13: 		<%=@minibanners = Minibanner.all%>
+14: 		<% @minibanners.each do |minibanner|%>
+15: 		  <%=link_to image_tag(minibanner.public_filename), minibanner.link unless minibanner.public_filename.nil? || minibanner.link.nil? %>
+16: 		<% end unless @minibanners.empty?%>
+17: 		</div>
+18: </div>
+
+    vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu/backends/file_system_backend.rb:21:in `join'
+    vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu/backends/file_system_backend.rb:21:in `full_filename'
+    vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu/backends/file_system_backend.rb:47:in `public_filename'
+    app/views/layouts/application.html.erb:15:in `_run_erb_47app47views47layouts47application46html46erb'
+    app/views/layouts/application.html.erb:14:in `each'
+    app/views/layouts/application.html.erb:14:in `_run_erb_47app47views47layouts47application46html46erb'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `execute'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:35:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:22:in `render_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:245:in `render_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/layout.rb:257:in `render_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1157:in `default_render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1168:in `perform_action_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:76:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing AboutsController#index (for 127.0.0.1 at 2009-01-02 03:56:59) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"action"=>"index", "controller"=>"abouts"}
+  [4;36;1mAbout Columns (0.001825)[0m   [0;1mSHOW FIELDS FROM `abouts`[0m
+  [4;35;1mAbout Load (0.000292)[0m   [0mSELECT * FROM `abouts` WHERE (`abouts`.`id` = 1) LIMIT 1[0m
+  [4;36;1mBigbord Columns (0.001538)[0m   [0;1mSHOW FIELDS FROM `bigbords`[0m
+  [4;35;1mBigbord Load (0.000357)[0m   [0mSELECT * FROM `bigbords` WHERE (`bigbords`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering abouts/index
+Rendered includes/_menu (0.00080)
+Rendered includes/_header (0.00316)
+  [4;36;1mMinibanner Load (0.000321)[0m   [0;1mSELECT * FROM `minibanners` [0m
+  [4;35;1mMinibanner Columns (0.001792)[0m   [0mSHOW FIELDS FROM `minibanners`[0m
+
+
+ActionView::TemplateError (can't convert nil into String) on line #15 of layouts/application.html.erb:
+12: 		(<%= link_to "Добавить банер"+image_tag("create.png"), new_minibanner_path %>)
+13: 		<%=@minibanners = Minibanner.all%>
+14: 		<% @minibanners.each do |minibanner|%>
+15: 		  <%=link_to image_tag(minibanner.public_filename), minibanner.link unless minibanner.public_filename.nil? || minibanner.link.nil? %>
+16: 		<% end unless @minibanners.empty?%>
+17: 		</div>
+18: </div>
+
+    vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu/backends/file_system_backend.rb:21:in `join'
+    vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu/backends/file_system_backend.rb:21:in `full_filename'
+    vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu/backends/file_system_backend.rb:47:in `public_filename'
+    app/views/layouts/application.html.erb:15:in `_run_erb_47app47views47layouts47application46html46erb'
+    app/views/layouts/application.html.erb:14:in `each'
+    app/views/layouts/application.html.erb:14:in `_run_erb_47app47views47layouts47application46html46erb'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `execute'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:35:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:22:in `render_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:245:in `render_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/layout.rb:257:in `render_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1157:in `default_render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1168:in `perform_action_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:76:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing AboutsController#index (for 127.0.0.1 at 2009-01-02 03:58:13) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"action"=>"index", "controller"=>"abouts"}
+  [4;36;1mAbout Columns (0.002506)[0m   [0;1mSHOW FIELDS FROM `abouts`[0m
+  [4;35;1mAbout Load (0.000319)[0m   [0mSELECT * FROM `abouts` WHERE (`abouts`.`id` = 1) LIMIT 1[0m
+  [4;36;1mBigbord Columns (0.001646)[0m   [0;1mSHOW FIELDS FROM `bigbords`[0m
+  [4;35;1mBigbord Load (0.001093)[0m   [0mSELECT * FROM `bigbords` WHERE (`bigbords`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering abouts/index
+Rendered includes/_menu (0.00103)
+Rendered includes/_header (0.00393)
+  [4;36;1mMinibanner Load (0.000287)[0m   [0;1mSELECT * FROM `minibanners` [0m
+  [4;35;1mMinibanner Columns (0.002412)[0m   [0mSHOW FIELDS FROM `minibanners`[0m
+
+
+ActionView::TemplateError (can't convert nil into String) on line #15 of layouts/application.html.erb:
+12: 		(<%= link_to "Добавить банер"+image_tag("create.png"), new_minibanner_path %>)
+13: 		<%=@minibanners = Minibanner.all%>
+14: 		<% @minibanners.each do |minibanner|%>
+15: 		  <%=link_to image_tag(minibanner.public_filename), '' unless minibanner.public_filename.nil? || minibanner.link.nil? %>
+16: 		<% end unless @minibanners.empty?%>
+17: 		</div>
+18: </div>
+
+    vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu/backends/file_system_backend.rb:21:in `join'
+    vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu/backends/file_system_backend.rb:21:in `full_filename'
+    vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu/backends/file_system_backend.rb:47:in `public_filename'
+    app/views/layouts/application.html.erb:15:in `_run_erb_47app47views47layouts47application46html46erb'
+    app/views/layouts/application.html.erb:14:in `each'
+    app/views/layouts/application.html.erb:14:in `_run_erb_47app47views47layouts47application46html46erb'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `execute'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:35:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:22:in `render_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:245:in `render_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/layout.rb:257:in `render_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1157:in `default_render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1168:in `perform_action_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:76:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing AboutsController#index (for 127.0.0.1 at 2009-01-02 03:58:23) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"action"=>"index", "controller"=>"abouts"}
+  [4;36;1mAbout Columns (0.001628)[0m   [0;1mSHOW FIELDS FROM `abouts`[0m
+  [4;35;1mAbout Load (0.000649)[0m   [0mSELECT * FROM `abouts` WHERE (`abouts`.`id` = 1) LIMIT 1[0m
+  [4;36;1mBigbord Columns (0.001370)[0m   [0;1mSHOW FIELDS FROM `bigbords`[0m
+  [4;35;1mBigbord Load (0.002154)[0m   [0mSELECT * FROM `bigbords` WHERE (`bigbords`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering abouts/index
+Rendered includes/_menu (0.00125)
+Rendered includes/_header (0.00462)
+  [4;36;1mMinibanner Load (0.000289)[0m   [0;1mSELECT * FROM `minibanners` [0m
+  [4;35;1mMinibanner Columns (0.001858)[0m   [0mSHOW FIELDS FROM `minibanners`[0m
+
+
+ActionView::TemplateError (can't convert nil into String) on line #15 of layouts/application.html.erb:
+12: 		(<%= link_to "Добавить банер"+image_tag("create.png"), new_minibanner_path %>)
+13: 		<%=@minibanners = Minibanner.all%>
+14: 		<% @minibanners.each do |minibanner|%>
+15: 		  <%=link_to image_tag(minibanner.public_filename), minibanner.link unless minibanner.public_filename.nil? || minibanner.link.nil? %>
+16: 		<% end unless @minibanners.empty?%>
+17: 		</div>
+18: </div>
+
+    vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu/backends/file_system_backend.rb:21:in `join'
+    vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu/backends/file_system_backend.rb:21:in `full_filename'
+    vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu/backends/file_system_backend.rb:47:in `public_filename'
+    app/views/layouts/application.html.erb:15:in `_run_erb_47app47views47layouts47application46html46erb'
+    app/views/layouts/application.html.erb:14:in `each'
+    app/views/layouts/application.html.erb:14:in `_run_erb_47app47views47layouts47application46html46erb'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `execute'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:35:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:22:in `render_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:245:in `render_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/layout.rb:257:in `render_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1157:in `default_render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1168:in `perform_action_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:76:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing AboutsController#index (for 127.0.0.1 at 2009-01-02 03:59:09) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"action"=>"index", "controller"=>"abouts"}
+  [4;36;1mAbout Columns (0.002442)[0m   [0;1mSHOW FIELDS FROM `abouts`[0m
+  [4;35;1mAbout Load (0.000303)[0m   [0mSELECT * FROM `abouts` WHERE (`abouts`.`id` = 1) LIMIT 1[0m
+  [4;36;1mBigbord Columns (0.001957)[0m   [0;1mSHOW FIELDS FROM `bigbords`[0m
+  [4;35;1mBigbord Load (0.000468)[0m   [0mSELECT * FROM `bigbords` WHERE (`bigbords`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering abouts/index
+Rendered includes/_menu (0.00129)
+Rendered includes/_header (0.00425)
+  [4;36;1mMinibanner Load (0.000286)[0m   [0;1mSELECT * FROM `minibanners` [0m
+  [4;35;1mMinibanner Columns (0.002383)[0m   [0mSHOW FIELDS FROM `minibanners`[0m
+Rendered includes/_footer (0.00002)
+Completed in 0.07886 (12 reqs/sec) | Rendering: 0.05714 (72%) | DB: 0.00999 (12%) | 200 OK [http://localhost/abouts]
+
+
+Processing AboutsController#index (for 127.0.0.1 at 2009-01-02 03:59:38) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"action"=>"index", "controller"=>"abouts"}
+  [4;36;1mAbout Columns (0.010987)[0m   [0;1mSHOW FIELDS FROM `abouts`[0m
+  [4;35;1mAbout Load (0.000399)[0m   [0mSELECT * FROM `abouts` WHERE (`abouts`.`id` = 1) LIMIT 1[0m
+  [4;36;1mBigbord Columns (0.001346)[0m   [0;1mSHOW FIELDS FROM `bigbords`[0m
+  [4;35;1mBigbord Load (0.000191)[0m   [0mSELECT * FROM `bigbords` WHERE (`bigbords`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering abouts/index
+Rendered includes/_menu (0.00099)
+Rendered includes/_header (0.00312)
+  [4;36;1mMinibanner Load (0.000283)[0m   [0;1mSELECT * FROM `minibanners` [0m
+  [4;35;1mMinibanner Columns (0.002453)[0m   [0mSHOW FIELDS FROM `minibanners`[0m
+Rendered includes/_footer (0.00002)
+Completed in 0.08613 (11 reqs/sec) | Rendering: 0.05694 (66%) | DB: 0.01566 (18%) | 200 OK [http://localhost/abouts]
+
+
+Processing AboutsController#index (for 127.0.0.1 at 2009-01-02 03:59:54) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"action"=>"index", "controller"=>"abouts"}
+  [4;36;1mAbout Columns (0.002521)[0m   [0;1mSHOW FIELDS FROM `abouts`[0m
+  [4;35;1mAbout Load (0.000271)[0m   [0mSELECT * FROM `abouts` WHERE (`abouts`.`id` = 1) LIMIT 1[0m
+  [4;36;1mBigbord Columns (0.001788)[0m   [0;1mSHOW FIELDS FROM `bigbords`[0m
+  [4;35;1mBigbord Load (0.001022)[0m   [0mSELECT * FROM `bigbords` WHERE (`bigbords`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering abouts/index
+Rendered includes/_menu (0.00076)
+Rendered includes/_header (0.00356)
+  [4;36;1mMinibanner Load (0.000613)[0m   [0;1mSELECT * FROM `minibanners` [0m
+  [4;35;1mMinibanner Columns (0.002378)[0m   [0mSHOW FIELDS FROM `minibanners`[0m
+Rendered includes/_footer (0.00002)
+Completed in 0.08118 (12 reqs/sec) | Rendering: 0.05730 (70%) | DB: 0.00859 (10%) | 200 OK [http://localhost/abouts]
+
+
+Processing AboutsController#index (for 127.0.0.1 at 2009-01-02 04:00:52) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"action"=>"index", "controller"=>"abouts"}
+  [4;36;1mAbout Columns (0.002547)[0m   [0;1mSHOW FIELDS FROM `abouts`[0m
+  [4;35;1mAbout Load (0.000302)[0m   [0mSELECT * FROM `abouts` WHERE (`abouts`.`id` = 1) LIMIT 1[0m
+  [4;36;1mBigbord Columns (0.001572)[0m   [0;1mSHOW FIELDS FROM `bigbords`[0m
+  [4;35;1mBigbord Load (0.000311)[0m   [0mSELECT * FROM `bigbords` WHERE (`bigbords`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering abouts/index
+Rendered includes/_menu (0.00075)
+Rendered includes/_header (0.00292)
+  [4;36;1mMinibanner Load (0.000278)[0m   [0;1mSELECT * FROM `minibanners` [0m
+  [4;35;1mMinibanner Columns (0.001702)[0m   [0mSHOW FIELDS FROM `minibanners`[0m
+Rendered includes/_footer (0.00001)
+Completed in 0.07384 (13 reqs/sec) | Rendering: 0.05462 (73%) | DB: 0.00671 (9%) | 200 OK [http://localhost/abouts]
+
+
+Processing AboutsController#index (for 127.0.0.1 at 2009-01-02 04:01:04) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"action"=>"index", "controller"=>"abouts"}
+  [4;36;1mAbout Columns (0.045232)[0m   [0;1mSHOW FIELDS FROM `abouts`[0m
+  [4;35;1mAbout Load (0.000628)[0m   [0mSELECT * FROM `abouts` WHERE (`abouts`.`id` = 1) LIMIT 1[0m
+  [4;36;1mBigbord Columns (0.001575)[0m   [0;1mSHOW FIELDS FROM `bigbords`[0m
+  [4;35;1mBigbord Load (0.000345)[0m   [0mSELECT * FROM `bigbords` WHERE (`bigbords`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering abouts/index
+Rendered includes/_menu (0.00084)
+Rendered includes/_header (0.00329)
+  [4;36;1mMinibanner Load (0.000283)[0m   [0;1mSELECT * FROM `minibanners` [0m
+  [4;35;1mMinibanner Columns (0.001771)[0m   [0mSHOW FIELDS FROM `minibanners`[0m
+Rendered includes/_footer (0.00001)
+Completed in 0.11856 (8 reqs/sec) | Rendering: 0.05574 (47%) | DB: 0.04983 (42%) | 200 OK [http://localhost/abouts]
+
+
+Processing AboutsController#index (for 127.0.0.1 at 2009-01-02 04:01:13) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"action"=>"index", "controller"=>"abouts"}
+  [4;36;1mAbout Columns (0.002523)[0m   [0;1mSHOW FIELDS FROM `abouts`[0m
+  [4;35;1mAbout Load (0.000305)[0m   [0mSELECT * FROM `abouts` WHERE (`abouts`.`id` = 1) LIMIT 1[0m
+  [4;36;1mBigbord Columns (0.001519)[0m   [0;1mSHOW FIELDS FROM `bigbords`[0m
+  [4;35;1mBigbord Load (0.001850)[0m   [0mSELECT * FROM `bigbords` WHERE (`bigbords`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering abouts/index
+Rendered includes/_menu (0.00075)
+Rendered includes/_header (0.00283)
+  [4;36;1mMinibanner Load (0.000247)[0m   [0;1mSELECT * FROM `minibanners` [0m
+  [4;35;1mMinibanner Columns (0.003140)[0m   [0mSHOW FIELDS FROM `minibanners`[0m
+Rendered includes/_footer (0.00002)
+Completed in 0.14429 (6 reqs/sec) | Rendering: 0.12178 (84%) | DB: 0.00958 (6%) | 200 OK [http://localhost/abouts]
+
+
+Processing AboutsController#index (for 127.0.0.1 at 2009-01-02 04:02:08) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"action"=>"index", "controller"=>"abouts"}
+  [4;36;1mAbout Columns (0.002745)[0m   [0;1mSHOW FIELDS FROM `abouts`[0m
+  [4;35;1mAbout Load (0.000367)[0m   [0mSELECT * FROM `abouts` WHERE (`abouts`.`id` = 1) LIMIT 1[0m
+  [4;36;1mBigbord Columns (0.001657)[0m   [0;1mSHOW FIELDS FROM `bigbords`[0m
+  [4;35;1mBigbord Load (0.000464)[0m   [0mSELECT * FROM `bigbords` WHERE (`bigbords`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering abouts/index
+Rendered includes/_menu (0.00133)
+Rendered includes/_header (0.00463)
+  [4;36;1mMinibanner Load (0.000345)[0m   [0;1mSELECT * FROM `minibanners` [0m
+  [4;35;1mMinibanner Columns (0.002262)[0m   [0mSHOW FIELDS FROM `minibanners`[0m
+Rendered includes/_footer (0.00002)
+Completed in 0.08330 (12 reqs/sec) | Rendering: 0.05859 (70%) | DB: 0.00784 (9%) | 200 OK [http://localhost/abouts]
+
+
+Processing MinibannersController#destroy (for 127.0.0.1 at 2009-01-02 04:02:15) [DELETE]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"authenticity_token"=>"e62d9eacd9377f6deb02a657f9974b4e7bbbb532", "_method"=>"delete", "action"=>"destroy", "id"=>"1", "controller"=>"minibanners"}
+  [4;36;1mMinibanner Columns (0.003050)[0m   [0;1mSHOW FIELDS FROM `minibanners`[0m
+  [4;35;1mMinibanner Load (0.000914)[0m   [0mSELECT * FROM `minibanners` WHERE (`minibanners`.`id` = 1) [0m
+  [4;36;1mSQL (0.000170)[0m   [0;1mBEGIN[0m
+  [4;35;1mMinibanner Destroy (0.000242)[0m   [0m DELETE FROM `minibanners`
+ WHERE `id` = 1
+[0m
+  [4;36;1mSQL (0.057058)[0m   [0;1mROLLBACK[0m
+
+
+TypeError (can't convert nil into String):
+    /vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu/backends/file_system_backend.rb:21:in `join'
+    /vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu/backends/file_system_backend.rb:21:in `full_filename'
+    /vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu/backends/file_system_backend.rb:67:in `destroy_file'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/callbacks.rb:173:in `send'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/callbacks.rb:173:in `evaluate_method'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/callbacks.rb:161:in `call'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/callbacks.rb:93:in `run'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/callbacks.rb:92:in `each'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/callbacks.rb:92:in `send'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/callbacks.rb:92:in `run'
+    /vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu.rb:451:in `run_callbacks'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/callbacks.rb:298:in `callback'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/callbacks.rb:290:in `destroy_without_transactions'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/transactions.rb:102:in `destroy'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/database_statements.rb:66:in `transaction'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/transactions.rb:79:in `transaction'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/transactions.rb:98:in `transaction'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/transactions.rb:102:in `destroy'
+    /app/controllers/minibanners_controller.rb:12:in `destroy'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `perform_action_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing AboutsController#index (for 127.0.0.1 at 2009-01-02 04:02:35) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"action"=>"index", "controller"=>"abouts"}
+  [4;35;1mAbout Columns (0.002036)[0m   [0mSHOW FIELDS FROM `abouts`[0m
+  [4;36;1mAbout Load (0.000541)[0m   [0;1mSELECT * FROM `abouts` WHERE (`abouts`.`id` = 1) LIMIT 1[0m
+  [4;35;1mBigbord Columns (0.001616)[0m   [0mSHOW FIELDS FROM `bigbords`[0m
+  [4;36;1mBigbord Load (0.000273)[0m   [0;1mSELECT * FROM `bigbords` WHERE (`bigbords`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering abouts/index
+Rendered includes/_menu (0.00083)
+Rendered includes/_header (0.00348)
+  [4;35;1mMinibanner Load (0.000286)[0m   [0mSELECT * FROM `minibanners` [0m
+  [4;36;1mMinibanner Columns (0.001796)[0m   [0;1mSHOW FIELDS FROM `minibanners`[0m
+Rendered includes/_footer (0.00003)
+Completed in 0.07383 (13 reqs/sec) | Rendering: 0.05428 (73%) | DB: 0.06798 (92%) | 200 OK [http://localhost/abouts]
+
+
+Processing MinibannersController#destroy (for 127.0.0.1 at 2009-01-02 04:02:38) [DELETE]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"authenticity_token"=>"e62d9eacd9377f6deb02a657f9974b4e7bbbb532", "_method"=>"delete", "action"=>"destroy", "id"=>"1", "controller"=>"minibanners"}
+  [4;35;1mMinibanner Columns (0.002076)[0m   [0mSHOW FIELDS FROM `minibanners`[0m
+  [4;36;1mMinibanner Load (0.001018)[0m   [0;1mSELECT * FROM `minibanners` WHERE (`minibanners`.`id` = 1) [0m
+  [4;35;1mSQL (0.000087)[0m   [0mBEGIN[0m
+  [4;36;1mMinibanner Destroy (0.000183)[0m   [0;1m DELETE FROM `minibanners`
+ WHERE `id` = 1
+[0m
+  [4;35;1mSQL (0.001021)[0m   [0mROLLBACK[0m
+
+
+TypeError (can't convert nil into String):
+    /vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu/backends/file_system_backend.rb:21:in `join'
+    /vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu/backends/file_system_backend.rb:21:in `full_filename'
+    /vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu/backends/file_system_backend.rb:67:in `destroy_file'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/callbacks.rb:173:in `send'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/callbacks.rb:173:in `evaluate_method'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/callbacks.rb:161:in `call'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/callbacks.rb:93:in `run'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/callbacks.rb:92:in `each'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/callbacks.rb:92:in `send'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/callbacks.rb:92:in `run'
+    /vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu.rb:451:in `run_callbacks'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/callbacks.rb:298:in `callback'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/callbacks.rb:290:in `destroy_without_transactions'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/transactions.rb:102:in `destroy'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/database_statements.rb:66:in `transaction'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/transactions.rb:79:in `transaction'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/transactions.rb:98:in `transaction'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/transactions.rb:102:in `destroy'
+    /app/controllers/minibanners_controller.rb:12:in `destroy'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `perform_action_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing AboutsController#index (for 127.0.0.1 at 2009-01-02 04:04:06) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"action"=>"index", "controller"=>"abouts"}
+  [4;36;1mAbout Columns (0.002549)[0m   [0;1mSHOW FIELDS FROM `abouts`[0m
+  [4;35;1mAbout Load (0.000444)[0m   [0mSELECT * FROM `abouts` WHERE (`abouts`.`id` = 1) LIMIT 1[0m
+  [4;36;1mBigbord Columns (0.001506)[0m   [0;1mSHOW FIELDS FROM `bigbords`[0m
+  [4;35;1mBigbord Load (0.001188)[0m   [0mSELECT * FROM `bigbords` WHERE (`bigbords`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering abouts/index
+Rendered includes/_menu (0.00080)
+Rendered includes/_header (0.00322)
+  [4;36;1mMinibanner Load (0.000280)[0m   [0;1mSELECT * FROM `minibanners` [0m
+  [4;35;1mMinibanner Columns (0.001819)[0m   [0mSHOW FIELDS FROM `minibanners`[0m
+Rendered includes/_footer (0.00001)
+Completed in 0.07868 (12 reqs/sec) | Rendering: 0.05714 (72%) | DB: 0.01217 (15%) | 200 OK [http://localhost/abouts]
+
+
+Processing AboutsController#index (for 127.0.0.1 at 2009-01-02 04:04:09) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"action"=>"index", "controller"=>"abouts"}
+  [4;36;1mAbout Columns (0.002498)[0m   [0;1mSHOW FIELDS FROM `abouts`[0m
+  [4;35;1mAbout Load (0.000324)[0m   [0mSELECT * FROM `abouts` WHERE (`abouts`.`id` = 1) LIMIT 1[0m
+  [4;36;1mBigbord Columns (0.001620)[0m   [0;1mSHOW FIELDS FROM `bigbords`[0m
+  [4;35;1mBigbord Load (0.000834)[0m   [0mSELECT * FROM `bigbords` WHERE (`bigbords`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering abouts/index
+Rendered includes/_menu (0.00083)
+Rendered includes/_header (0.00323)
+  [4;36;1mMinibanner Load (0.000280)[0m   [0;1mSELECT * FROM `minibanners` [0m
+  [4;35;1mMinibanner Columns (0.002997)[0m   [0mSHOW FIELDS FROM `minibanners`[0m
+Rendered includes/_footer (0.00002)
+Completed in 0.07932 (12 reqs/sec) | Rendering: 0.05699 (71%) | DB: 0.00855 (10%) | 200 OK [http://localhost/abouts]
+
+
+Processing AboutsController#index (for 127.0.0.1 at 2009-01-02 04:05:02) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"action"=>"index", "controller"=>"abouts"}
+  [4;36;1mAbout Columns (0.002605)[0m   [0;1mSHOW FIELDS FROM `abouts`[0m
+  [4;35;1mAbout Load (0.000426)[0m   [0mSELECT * FROM `abouts` WHERE (`abouts`.`id` = 1) LIMIT 1[0m
+  [4;36;1mBigbord Columns (0.001490)[0m   [0;1mSHOW FIELDS FROM `bigbords`[0m
+  [4;35;1mBigbord Load (0.000362)[0m   [0mSELECT * FROM `bigbords` WHERE (`bigbords`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering abouts/index
+Rendered includes/_menu (0.00099)
+Rendered includes/_header (0.00323)
+  [4;36;1mMinibanner Load (0.000227)[0m   [0;1mSELECT * FROM `minibanners` [0m
+  [4;35;1mMinibanner Columns (0.002576)[0m   [0mSHOW FIELDS FROM `minibanners`[0m
+Rendered includes/_footer (0.00002)
+Completed in 0.07674 (13 reqs/sec) | Rendering: 0.05570 (72%) | DB: 0.00769 (10%) | 200 OK [http://localhost/abouts]
+
+
+Processing MinibannersController#destroy (for 127.0.0.1 at 2009-01-02 04:05:14) [DELETE]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"authenticity_token"=>"e62d9eacd9377f6deb02a657f9974b4e7bbbb532", "_method"=>"delete", "action"=>"destroy", "id"=>"2", "controller"=>"minibanners"}
+  [4;36;1mMinibanner Columns (0.279175)[0m   [0;1mSHOW FIELDS FROM `minibanners`[0m
+  [4;35;1mMinibanner Load (0.000657)[0m   [0mSELECT * FROM `minibanners` WHERE (`minibanners`.`id` = 2) [0m
+  [4;36;1mSQL (0.000098)[0m   [0;1mBEGIN[0m
+  [4;35;1mMinibanner Load (0.000222)[0m   [0mSELECT * FROM `minibanners` WHERE (`minibanners`.parent_id = 2) [0m
+  [4;36;1mMinibanner Destroy (0.000164)[0m   [0;1m DELETE FROM `minibanners`
+ WHERE `id` = 2
+[0m
+  [4;35;1mSQL (0.000688)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed in 0.33048 (3 reqs/sec) | DB: 0.28100 (85%) | 302 Found [http://localhost/minibanners/2]
+
+
+Processing AboutsController#index (for 127.0.0.1 at 2009-01-02 04:05:15) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"action"=>"index", "controller"=>"abouts"}
+  [4;36;1mAbout Columns (0.001877)[0m   [0;1mSHOW FIELDS FROM `abouts`[0m
+  [4;35;1mAbout Load (0.000289)[0m   [0mSELECT * FROM `abouts` WHERE (`abouts`.`id` = 1) LIMIT 1[0m
+  [4;36;1mBigbord Columns (0.001488)[0m   [0;1mSHOW FIELDS FROM `bigbords`[0m
+  [4;35;1mBigbord Load (0.000724)[0m   [0mSELECT * FROM `bigbords` WHERE (`bigbords`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering abouts/index
+Rendered includes/_menu (0.00130)
+Rendered includes/_header (0.00766)
+  [4;36;1mMinibanner Load (0.000272)[0m   [0;1mSELECT * FROM `minibanners` [0m
+Rendered includes/_footer (0.00001)
+Completed in 0.07546 (13 reqs/sec) | Rendering: 0.05681 (75%) | DB: 0.00465 (6%) | 200 OK [http://localhost/]
+
+
+Processing MinibannersController#new (for 127.0.0.1 at 2009-01-02 04:05:18) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"action"=>"new", "controller"=>"minibanners"}
+  [4;35;1mMinibanner Columns (0.003219)[0m   [0mSHOW FIELDS FROM `minibanners`[0m
+Rendering template within layouts/application
+Rendering minibanners/new
+Rendered includes/_menu (0.00216)
+Rendered includes/_header (0.00872)
+  [4;36;1mMinibanner Load (0.000512)[0m   [0;1mSELECT * FROM `minibanners` [0m
+Rendered includes/_footer (0.00002)
+Completed in 0.13250 (7 reqs/sec) | Rendering: 0.01553 (11%) | DB: 0.00373 (2%) | 200 OK [http://localhost/minibanners/new]
+
+
+Processing MinibannersController#create (for 127.0.0.1 at 2009-01-02 04:05:26) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"commit"=>"Сохранить", "minibanner"=>{"uploaded_data"=>#<ActionController::UploadedStringIO:0x22e6254>, "link"=>"http://www.mail.tu"}, "authenticity_token"=>"e62d9eacd9377f6deb02a657f9974b4e7bbbb532", "action"=>"create", "controller"=>"minibanners"}
+  [4;35;1mMinibanner Columns (0.002651)[0m   [0mSHOW FIELDS FROM `minibanners`[0m
+  [4;36;1mSQL (0.000133)[0m   [0;1mBEGIN[0m
+  [4;35;1mMinibanner Create (0.000284)[0m   [0mINSERT INTO `minibanners` (`content_type`, `thumbnail`, `size`, `updated_at`, `filename`, `height`, `link`, `parent_id`, `width`, `created_at`) VALUES('image/jpeg', NULL, 14710, '2009-01-02 02:05:26', 'pt.jpg', 98, 'http://www.mail.tu', NULL, 225, '2009-01-02 02:05:26')[0m
+  [4;36;1mSQL (0.000788)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed in 0.05879 (17 reqs/sec) | DB: 0.00386 (6%) | 302 Found [http://localhost/minibanners]
+
+
+Processing AboutsController#index (for 127.0.0.1 at 2009-01-02 04:05:26) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"action"=>"index", "controller"=>"abouts"}
+  [4;35;1mAbout Columns (0.001887)[0m   [0mSHOW FIELDS FROM `abouts`[0m
+  [4;36;1mAbout Load (0.000943)[0m   [0;1mSELECT * FROM `abouts` WHERE (`abouts`.`id` = 1) LIMIT 1[0m
+  [4;35;1mBigbord Columns (0.002044)[0m   [0mSHOW FIELDS FROM `bigbords`[0m
+  [4;36;1mBigbord Load (0.000250)[0m   [0;1mSELECT * FROM `bigbords` WHERE (`bigbords`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering abouts/index
+Rendered includes/_menu (0.00087)
+Rendered includes/_header (0.00498)
+  [4;35;1mMinibanner Load (0.000313)[0m   [0mSELECT * FROM `minibanners` [0m
+  [4;36;1mMinibanner Columns (0.002282)[0m   [0;1mSHOW FIELDS FROM `minibanners`[0m
+Rendered includes/_footer (0.00001)
+Completed in 0.08045 (12 reqs/sec) | Rendering: 0.05821 (72%) | DB: 0.00772 (9%) | 200 OK [http://localhost/]
+
+
+Processing AboutsController#index (for 127.0.0.1 at 2009-01-02 04:16:22) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"action"=>"index", "controller"=>"abouts"}
+  [4;35;1mAbout Columns (0.002515)[0m   [0mSHOW FIELDS FROM `abouts`[0m
+  [4;36;1mAbout Load (0.000291)[0m   [0;1mSELECT * FROM `abouts` WHERE (`abouts`.`id` = 1) LIMIT 1[0m
+  [4;35;1mBigbord Columns (0.001989)[0m   [0mSHOW FIELDS FROM `bigbords`[0m
+  [4;36;1mBigbord Load (0.004294)[0m   [0;1mSELECT * FROM `bigbords` WHERE (`bigbords`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering abouts/index
+Rendered includes/_menu (0.00081)
+Rendered includes/_header (0.00337)
+  [4;35;1mMinibanner Load (0.000278)[0m   [0mSELECT * FROM `minibanners` [0m
+  [4;36;1mMinibanner Columns (0.002287)[0m   [0;1mSHOW FIELDS FROM `minibanners`[0m
+Rendered includes/_footer (0.00002)
+Completed in 0.08392 (11 reqs/sec) | Rendering: 0.05863 (69%) | DB: 0.01165 (13%) | 200 OK [http://localhost/]
+
+
+Processing AboutsController#index (for 127.0.0.1 at 2009-01-02 04:18:35) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"action"=>"index", "controller"=>"abouts"}
+  [4;35;1mAbout Columns (0.002526)[0m   [0mSHOW FIELDS FROM `abouts`[0m
+  [4;36;1mAbout Load (0.000308)[0m   [0;1mSELECT * FROM `abouts` WHERE (`abouts`.`id` = 1) LIMIT 1[0m
+  [4;35;1mBigbord Columns (0.001896)[0m   [0mSHOW FIELDS FROM `bigbords`[0m
+  [4;36;1mBigbord Load (0.005013)[0m   [0;1mSELECT * FROM `bigbords` WHERE (`bigbords`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering abouts/index
+Rendered includes/_menu (0.00098)
+Rendered includes/_header (0.00391)
+  [4;35;1mMinibanner Load (0.000282)[0m   [0mSELECT * FROM `minibanners` [0m
+  [4;36;1mMinibanner Columns (0.002544)[0m   [0;1mSHOW FIELDS FROM `minibanners`[0m
+Rendered includes/_footer (0.00002)
+Completed in 0.08426 (11 reqs/sec) | Rendering: 0.05714 (67%) | DB: 0.01257 (14%) | 200 OK [http://localhost/]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2009-01-02 04:19:09) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;35;1mContact Columns (0.002369)[0m   [0mSHOW FIELDS FROM `contacts`[0m
+  [4;36;1mContact Load (0.000278)[0m   [0;1mSELECT * FROM `contacts` WHERE (`contacts`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/index
+Rendered includes/_menu (0.00114)
+Rendered includes/_header (0.00491)
+  [4;35;1mMinibanner Load (0.000243)[0m   [0mSELECT * FROM `minibanners` [0m
+  [4;36;1mMinibanner Columns (0.002790)[0m   [0;1mSHOW FIELDS FROM `minibanners`[0m
+Rendered includes/_footer (0.00002)
+Completed in 0.07067 (14 reqs/sec) | Rendering: 0.05780 (81%) | DB: 0.00568 (8%) | 200 OK [http://localhost/contacts]
+
+
+Processing MapsController#index (for 127.0.0.1 at 2009-01-02 04:19:11) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"action"=>"index", "controller"=>"maps"}
+  [4;35;1mCitymap Columns (0.064224)[0m   [0mSHOW FIELDS FROM `citymaps`[0m
+  [4;36;1mCitymap Load (0.011495)[0m   [0;1mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Винница') LIMIT 1[0m
+  [4;35;1mCitymap Load (0.000287)[0m   [0mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Донецк') LIMIT 1[0m
+  [4;36;1mCitymap Load (0.000232)[0m   [0;1mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Днепропетровск') LIMIT 1[0m
+  [4;35;1mCitymap Load (0.000273)[0m   [0mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Севостополь') LIMIT 1[0m
+  [4;36;1mCitymap Load (0.000205)[0m   [0;1mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Житомир') LIMIT 1[0m
+  [4;35;1mCitymap Load (0.000177)[0m   [0mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Ивано-Франковск') LIMIT 1[0m
+  [4;36;1mCitymap Load (0.000162)[0m   [0;1mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Запорожье') LIMIT 1[0m
+  [4;35;1mCitymap Load (0.000150)[0m   [0mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Киев') LIMIT 1[0m
+  [4;36;1mCitymap Load (0.000151)[0m   [0;1mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Луганск') LIMIT 1[0m
+  [4;35;1mCitymap Load (0.000156)[0m   [0mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Львов') LIMIT 1[0m
+  [4;36;1mCitymap Load (0.000139)[0m   [0;1mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Николаев') LIMIT 1[0m
+  [4;35;1mCitymap Load (0.000144)[0m   [0mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Одесса') LIMIT 1[0m
+  [4;36;1mCitymap Load (0.000193)[0m   [0;1mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Полтава') LIMIT 1[0m
+  [4;35;1mCitymap Load (0.000154)[0m   [0mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Ровно') LIMIT 1[0m
+  [4;36;1mCitymap Load (0.000145)[0m   [0;1mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Сумы') LIMIT 1[0m
+  [4;35;1mCitymap Load (0.000175)[0m   [0mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Тернополь') LIMIT 1[0m
+  [4;36;1mCitymap Load (0.000144)[0m   [0;1mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Харьков') LIMIT 1[0m
+  [4;35;1mCitymap Load (0.000154)[0m   [0mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Чернигов') LIMIT 1[0m
+  [4;36;1mCitymap Load (0.000151)[0m   [0;1mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Черновцы') LIMIT 1[0m
+  [4;35;1mCitymap Load (0.000157)[0m   [0mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Херсон') LIMIT 1[0m
+  [4;36;1mCitymap Load (0.000162)[0m   [0;1mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Ужгород') LIMIT 1[0m
+  [4;35;1mCitymap Load (0.000162)[0m   [0mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Черкассы') LIMIT 1[0m
+  [4;36;1mCitymap Load (0.000208)[0m   [0;1mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Симферополь') LIMIT 1[0m
+  [4;35;1mCitymap Load (0.000157)[0m   [0mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Кировоград') LIMIT 1[0m
+  [4;36;1mCitymap Load (0.000170)[0m   [0;1mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Хмельницкий') LIMIT 1[0m
+  [4;35;1mCitymap Load (0.000209)[0m   [0mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Луцк') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering maps/index
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Севостополь') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Симферополь') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Кировоград') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Луганск') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Харьков') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Запорожье') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Херсон') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Полтава') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Днепропетровск') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Николаев') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Одесса') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Кировоград') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Черкассы') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Сумы') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Чернигов') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Киев') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Житомир') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Винница') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Хмельницкий') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Тернополь') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Черновцы') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Ивано-Франковск') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Ужгород') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Львов') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Ровно') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Луцк') LIMIT 1[0m
+Rendered includes/_menu (0.00093)
+Rendered includes/_header (0.00342)
+  [4;36;1mMinibanner Load (0.000521)[0m   [0;1mSELECT * FROM `minibanners` [0m
+  [4;35;1mMinibanner Columns (0.018215)[0m   [0mSHOW FIELDS FROM `minibanners`[0m
+Rendered includes/_footer (0.00002)
+Completed in 0.25066 (3 reqs/sec) | Rendering: 0.13799 (55%) | DB: 0.09887 (39%) | 200 OK [http://localhost/maps]
+
+
+Processing AboutsController#index (for 127.0.0.1 at 2009-01-02 04:22:55) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"action"=>"index", "controller"=>"abouts"}
+  [4;36;1mAbout Columns (0.002522)[0m   [0;1mSHOW FIELDS FROM `abouts`[0m
+  [4;35;1mAbout Load (0.000303)[0m   [0mSELECT * FROM `abouts` WHERE (`abouts`.`id` = 1) LIMIT 1[0m
+  [4;36;1mBigbord Columns (0.001503)[0m   [0;1mSHOW FIELDS FROM `bigbords`[0m
+  [4;35;1mBigbord Load (0.001630)[0m   [0mSELECT * FROM `bigbords` WHERE (`bigbords`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering abouts/index
+Rendered includes/_menu (0.00086)
+Rendered includes/_header (0.00330)
+  [4;36;1mMinibanner Load (0.000286)[0m   [0;1mSELECT * FROM `minibanners` [0m
+  [4;35;1mMinibanner Columns (0.002838)[0m   [0mSHOW FIELDS FROM `minibanners`[0m
+Rendered includes/_footer (0.00002)
+Completed in 0.07684 (13 reqs/sec) | Rendering: 0.05493 (71%) | DB: 0.00908 (11%) | 200 OK [http://localhost/abouts]
+
+
+Processing ClientsController#index (for 127.0.0.1 at 2009-01-02 04:22:56) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"action"=>"index", "controller"=>"clients"}
+  [4;36;1mClient Columns (0.065676)[0m   [0;1mSHOW FIELDS FROM `clients`[0m
+  [4;35;1mClient Load (0.073655)[0m   [0mSELECT * FROM `clients` WHERE (`clients`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering clients/index
+Rendered includes/_menu (0.00098)
+Rendered includes/_header (0.00351)
+  [4;36;1mMinibanner Load (0.000282)[0m   [0;1mSELECT * FROM `minibanners` [0m
+  [4;35;1mMinibanner Columns (0.005714)[0m   [0mSHOW FIELDS FROM `minibanners`[0m
+Rendered includes/_footer (0.00001)
+Completed in 0.20857 (4 reqs/sec) | Rendering: 0.05398 (25%) | DB: 0.14533 (69%) | 200 OK [http://localhost/clients]
+
+
+Processing MapsController#index (for 127.0.0.1 at 2009-01-02 04:22:57) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"action"=>"index", "controller"=>"maps"}
+  [4;36;1mCitymap Columns (0.002550)[0m   [0;1mSHOW FIELDS FROM `citymaps`[0m
+  [4;35;1mCitymap Load (0.000287)[0m   [0mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Винница') LIMIT 1[0m
+  [4;36;1mCitymap Load (0.000205)[0m   [0;1mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Донецк') LIMIT 1[0m
+  [4;35;1mCitymap Load (0.000185)[0m   [0mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Днепропетровск') LIMIT 1[0m
+  [4;36;1mCitymap Load (0.000231)[0m   [0;1mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Севостополь') LIMIT 1[0m
+  [4;35;1mCitymap Load (0.000184)[0m   [0mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Житомир') LIMIT 1[0m
+  [4;36;1mCitymap Load (0.000155)[0m   [0;1mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Ивано-Франковск') LIMIT 1[0m
+  [4;35;1mCitymap Load (0.000147)[0m   [0mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Запорожье') LIMIT 1[0m
+  [4;36;1mCitymap Load (0.000141)[0m   [0;1mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Киев') LIMIT 1[0m
+  [4;35;1mCitymap Load (0.000166)[0m   [0mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Луганск') LIMIT 1[0m
+  [4;36;1mCitymap Load (0.000149)[0m   [0;1mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Львов') LIMIT 1[0m
+  [4;35;1mCitymap Load (0.000409)[0m   [0mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Николаев') LIMIT 1[0m
+  [4;36;1mCitymap Load (0.000310)[0m   [0;1mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Одесса') LIMIT 1[0m
+  [4;35;1mCitymap Load (0.000149)[0m   [0mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Полтава') LIMIT 1[0m
+  [4;36;1mCitymap Load (0.000148)[0m   [0;1mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Ровно') LIMIT 1[0m
+  [4;35;1mCitymap Load (0.000145)[0m   [0mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Сумы') LIMIT 1[0m
+  [4;36;1mCitymap Load (0.000147)[0m   [0;1mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Тернополь') LIMIT 1[0m
+  [4;35;1mCitymap Load (0.000198)[0m   [0mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Харьков') LIMIT 1[0m
+  [4;36;1mCitymap Load (0.000178)[0m   [0;1mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Чернигов') LIMIT 1[0m
+  [4;35;1mCitymap Load (0.000160)[0m   [0mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Черновцы') LIMIT 1[0m
+  [4;36;1mCitymap Load (0.000153)[0m   [0;1mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Херсон') LIMIT 1[0m
+  [4;35;1mCitymap Load (0.000150)[0m   [0mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Ужгород') LIMIT 1[0m
+  [4;36;1mCitymap Load (0.000154)[0m   [0;1mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Черкассы') LIMIT 1[0m
+  [4;35;1mCitymap Load (0.000152)[0m   [0mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Симферополь') LIMIT 1[0m
+  [4;36;1mCitymap Load (0.000155)[0m   [0;1mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Кировоград') LIMIT 1[0m
+  [4;35;1mCitymap Load (0.000154)[0m   [0mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Хмельницкий') LIMIT 1[0m
+  [4;36;1mCitymap Load (0.000158)[0m   [0;1mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Луцк') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering maps/index
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Севостополь') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Симферополь') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Кировоград') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Луганск') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Харьков') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Запорожье') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Херсон') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Полтава') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Днепропетровск') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Николаев') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Одесса') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Кировоград') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Черкассы') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Сумы') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Чернигов') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Киев') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Житомир') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Винница') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Хмельницкий') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Тернополь') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Черновцы') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Ивано-Франковск') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Ужгород') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Львов') LIMIT 1[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Ровно') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `citymaps` WHERE (`citymaps`.`city` = 'Луцк') LIMIT 1[0m
+Rendered includes/_menu (0.00079)
+Rendered includes/_header (0.00300)
+  [4;35;1mMinibanner Load (0.000323)[0m   [0mSELECT * FROM `minibanners` [0m
+  [4;36;1mMinibanner Columns (0.002421)[0m   [0;1mSHOW FIELDS FROM `minibanners`[0m
+Rendered includes/_footer (0.00002)
+Completed in 0.08334 (11 reqs/sec) | Rendering: 0.05965 (71%) | DB: 0.01006 (12%) | 200 OK [http://localhost/maps]
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-01-02 04:22:58) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"action"=>"index", "controller"=>"blogs"}
+  [4;35;1mBlog Load (0.000371)[0m   [0mSELECT * FROM `blogs` ORDER BY created_at DESC LIMIT 0, 10[0m
+Rendering template within layouts/application
+Rendering blogs/index
+  [4;36;1mBlog Columns (0.002133)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+  [4;35;1mTagging Columns (0.001819)[0m   [0mSHOW FIELDS FROM `taggings`[0m
+  [4;36;1mTag Load (0.000715)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN taggings ON tags.id = taggings.tag_id WHERE ((`taggings`.taggable_type = 'Blog') AND (`taggings`.taggable_id = 4)) [0m
+  [4;35;1mTag Columns (0.028301)[0m   [0mSHOW FIELDS FROM `tags`[0m
+  [4;36;1mTag Load (0.002735)[0m   [0;1mSELECT tags.id, tags.name, COUNT(*) AS count FROM `tags` INNER JOIN taggings ON tags.id = taggings.tag_id INNER JOIN blogs ON blogs.id = taggings.taggable_id WHERE (((tags.name LIKE 'Ending' OR tags.name LIKE 'music')) AND taggings.taggable_type = 'Blog') GROUP BY tags.id, tags.name HAVING COUNT(*) > 0[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT tags.id, tags.name, COUNT(*) AS count FROM `tags` INNER JOIN taggings ON tags.id = taggings.tag_id INNER JOIN blogs ON blogs.id = taggings.taggable_id WHERE (((tags.name LIKE 'Ending' OR tags.name LIKE 'music')) AND taggings.taggable_type = 'Blog') GROUP BY tags.id, tags.name HAVING COUNT(*) > 0[0m
+  [4;36;1mTag Load (0.000338)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN taggings ON tags.id = taggings.tag_id WHERE ((`taggings`.taggable_type = 'Blog') AND (`taggings`.taggable_id = 3)) [0m
+  [4;35;1mTag Load (0.000307)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN taggings ON tags.id = taggings.tag_id WHERE ((`taggings`.taggable_type = 'Blog') AND (`taggings`.taggable_id = 2)) [0m
+  [4;36;1mTag Load (0.001796)[0m   [0;1mSELECT tags.id, tags.name, COUNT(*) AS count FROM `tags` INNER JOIN taggings ON tags.id = taggings.tag_id INNER JOIN blogs ON blogs.id = taggings.taggable_id WHERE (((tags.name LIKE 'test')) AND taggings.taggable_type = 'Blog') GROUP BY tags.id, tags.name HAVING COUNT(*) > 0[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT tags.id, tags.name, COUNT(*) AS count FROM `tags` INNER JOIN taggings ON tags.id = taggings.tag_id INNER JOIN blogs ON blogs.id = taggings.taggable_id WHERE (((tags.name LIKE 'test')) AND taggings.taggable_type = 'Blog') GROUP BY tags.id, tags.name HAVING COUNT(*) > 0[0m
+Rendered includes/_menu (0.00116)
+Rendered includes/_header (0.00402)
+  [4;36;1mMinibanner Load (0.000290)[0m   [0;1mSELECT * FROM `minibanners` [0m
+  [4;35;1mMinibanner Columns (0.003164)[0m   [0mSHOW FIELDS FROM `minibanners`[0m
+Rendered includes/_footer (0.00002)
+Completed in 0.20545 (4 reqs/sec) | Rendering: 0.15664 (76%) | DB: 0.04197 (20%) | 200 OK [http://localhost/blogs]
+
+
+Processing PortfoliosController#index (for 127.0.0.1 at 2009-01-02 04:22:59) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"action"=>"index", "controller"=>"portfolios"}
+  [4;36;1mPortfolio Load (0.000363)[0m   [0;1mSELECT * FROM `portfolios` ORDER BY created_at DESC LIMIT 0, 10[0m
+Rendering template within layouts/application
+Rendering portfolios/index
+  [4;35;1mPortfolio Columns (0.002269)[0m   [0mSHOW FIELDS FROM `portfolios`[0m
+  [4;36;1mTag Load (0.000397)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN taggings ON tags.id = taggings.tag_id WHERE ((`taggings`.taggable_type = 'Portfolio') AND (`taggings`.taggable_id = 1)) [0m
+  [4;35;1mTag Load (0.001553)[0m   [0mSELECT tags.id, tags.name, COUNT(*) AS count FROM `tags` INNER JOIN taggings ON tags.id = taggings.tag_id INNER JOIN portfolios ON portfolios.id = taggings.taggable_id WHERE (((tags.name LIKE 'fsdfsdf')) AND taggings.taggable_type = 'Portfolio') GROUP BY tags.id, tags.name HAVING COUNT(*) > 0[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT tags.id, tags.name, COUNT(*) AS count FROM `tags` INNER JOIN taggings ON tags.id = taggings.tag_id INNER JOIN portfolios ON portfolios.id = taggings.taggable_id WHERE (((tags.name LIKE 'fsdfsdf')) AND taggings.taggable_type = 'Portfolio') GROUP BY tags.id, tags.name HAVING COUNT(*) > 0[0m
+Rendered includes/_menu (0.00127)
+Rendered includes/_header (0.00456)
+  [4;35;1mMinibanner Load (0.000311)[0m   [0mSELECT * FROM `minibanners` [0m
+  [4;36;1mMinibanner Columns (0.001874)[0m   [0;1mSHOW FIELDS FROM `minibanners`[0m
+Rendered includes/_footer (0.00001)
+Completed in 0.07300 (13 reqs/sec) | Rendering: 0.05937 (81%) | DB: 0.00677 (9%) | 200 OK [http://localhost/portfolios]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-01-02 04:23:01) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"action"=>"index", "controller"=>"products"}
+  [4;35;1mProduct Load (0.000305)[0m   [0mSELECT * FROM `products` ORDER BY created_at DESC LIMIT 0, 10[0m
+Rendering template within layouts/application
+Rendering products/index
+Rendered includes/_menu (0.00090)
+Rendered includes/_header (0.00312)
+  [4;36;1mMinibanner Load (0.000228)[0m   [0;1mSELECT * FROM `minibanners` [0m
+  [4;35;1mMinibanner Columns (0.003004)[0m   [0mSHOW FIELDS FROM `minibanners`[0m
+Rendered includes/_footer (0.00002)
+Completed in 0.06445 (15 reqs/sec) | Rendering: 0.05401 (83%) | DB: 0.00354 (5%) | 200 OK [http://localhost/products]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2009-01-02 04:23:03) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;36;1mContact Columns (0.002591)[0m   [0;1mSHOW FIELDS FROM `contacts`[0m
+  [4;35;1mContact Load (0.000365)[0m   [0mSELECT * FROM `contacts` WHERE (`contacts`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/index
+Rendered includes/_menu (0.00088)
+Rendered includes/_header (0.00417)
+  [4;36;1mMinibanner Load (0.000278)[0m   [0;1mSELECT * FROM `minibanners` [0m
+  [4;35;1mMinibanner Columns (0.001626)[0m   [0mSHOW FIELDS FROM `minibanners`[0m
+Rendered includes/_footer (0.00001)
+Completed in 0.06783 (14 reqs/sec) | Rendering: 0.05540 (81%) | DB: 0.00486 (7%) | 200 OK [http://localhost/contacts]
+
+
+Processing PortfoliosController#index (for 127.0.0.1 at 2009-01-02 04:23:08) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"action"=>"index", "controller"=>"portfolios"}
+  [4;36;1mPortfolio Load (0.000364)[0m   [0;1mSELECT * FROM `portfolios` ORDER BY created_at DESC LIMIT 0, 10[0m
+Rendering template within layouts/application
+Rendering portfolios/index
+  [4;35;1mPortfolio Columns (0.002265)[0m   [0mSHOW FIELDS FROM `portfolios`[0m
+  [4;36;1mTag Load (0.000408)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN taggings ON tags.id = taggings.tag_id WHERE ((`taggings`.taggable_type = 'Portfolio') AND (`taggings`.taggable_id = 1)) [0m
+  [4;35;1mTag Load (0.001524)[0m   [0mSELECT tags.id, tags.name, COUNT(*) AS count FROM `tags` INNER JOIN taggings ON tags.id = taggings.tag_id INNER JOIN portfolios ON portfolios.id = taggings.taggable_id WHERE (((tags.name LIKE 'fsdfsdf')) AND taggings.taggable_type = 'Portfolio') GROUP BY tags.id, tags.name HAVING COUNT(*) > 0[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT tags.id, tags.name, COUNT(*) AS count FROM `tags` INNER JOIN taggings ON tags.id = taggings.tag_id INNER JOIN portfolios ON portfolios.id = taggings.taggable_id WHERE (((tags.name LIKE 'fsdfsdf')) AND taggings.taggable_type = 'Portfolio') GROUP BY tags.id, tags.name HAVING COUNT(*) > 0[0m
+Rendered includes/_menu (0.00101)
+Rendered includes/_header (0.00430)
+  [4;35;1mMinibanner Load (0.000282)[0m   [0mSELECT * FROM `minibanners` [0m
+  [4;36;1mMinibanner Columns (0.002290)[0m   [0;1mSHOW FIELDS FROM `minibanners`[0m
+Rendered includes/_footer (0.00002)
+Completed in 0.07435 (13 reqs/sec) | Rendering: 0.06046 (81%) | DB: 0.00713 (9%) | 200 OK [http://localhost/portfolios]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-01-02 04:23:12) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"action"=>"index", "controller"=>"products"}
+  [4;35;1mProduct Load (0.000435)[0m   [0mSELECT * FROM `products` ORDER BY created_at DESC LIMIT 0, 10[0m
+Rendering template within layouts/application
+Rendering products/index
+Rendered includes/_menu (0.00078)
+Rendered includes/_header (0.00295)
+  [4;36;1mMinibanner Load (0.000276)[0m   [0;1mSELECT * FROM `minibanners` [0m
+  [4;35;1mMinibanner Columns (0.003219)[0m   [0mSHOW FIELDS FROM `minibanners`[0m
+Rendered includes/_footer (0.00002)
+Completed in 0.06442 (15 reqs/sec) | Rendering: 0.05359 (83%) | DB: 0.00393 (6%) | 200 OK [http://localhost/products]
+
+
+Processing PortfoliosController#index (for 127.0.0.1 at 2009-01-02 04:23:15) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"action"=>"index", "controller"=>"portfolios"}
+  [4;36;1mPortfolio Load (0.000336)[0m   [0;1mSELECT * FROM `portfolios` ORDER BY created_at DESC LIMIT 0, 10[0m
+Rendering template within layouts/application
+Rendering portfolios/index
+  [4;35;1mPortfolio Columns (0.060824)[0m   [0mSHOW FIELDS FROM `portfolios`[0m
+  [4;36;1mTag Load (0.040648)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN taggings ON tags.id = taggings.tag_id WHERE ((`taggings`.taggable_type = 'Portfolio') AND (`taggings`.taggable_id = 1)) [0m
+  [4;35;1mTag Load (0.111896)[0m   [0mSELECT tags.id, tags.name, COUNT(*) AS count FROM `tags` INNER JOIN taggings ON tags.id = taggings.tag_id INNER JOIN portfolios ON portfolios.id = taggings.taggable_id WHERE (((tags.name LIKE 'fsdfsdf')) AND taggings.taggable_type = 'Portfolio') GROUP BY tags.id, tags.name HAVING COUNT(*) > 0[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT tags.id, tags.name, COUNT(*) AS count FROM `tags` INNER JOIN taggings ON tags.id = taggings.tag_id INNER JOIN portfolios ON portfolios.id = taggings.taggable_id WHERE (((tags.name LIKE 'fsdfsdf')) AND taggings.taggable_type = 'Portfolio') GROUP BY tags.id, tags.name HAVING COUNT(*) > 0[0m
+Rendered includes/_menu (0.00109)
+Rendered includes/_header (0.00474)
+  [4;35;1mMinibanner Load (0.056084)[0m   [0mSELECT * FROM `minibanners` [0m
+  [4;36;1mMinibanner Columns (0.008954)[0m   [0;1mSHOW FIELDS FROM `minibanners`[0m
+Rendered includes/_footer (0.00001)
+Completed in 0.34695 (2 reqs/sec) | Rendering: 0.06163 (17%) | DB: 0.27874 (80%) | 200 OK [http://localhost/portfolios]
+
+
+Processing BlogsController#index (for 127.0.0.1 at 2009-01-02 04:23:17) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"action"=>"index", "controller"=>"blogs"}
+  [4;35;1mBlog Load (0.000427)[0m   [0mSELECT * FROM `blogs` ORDER BY created_at DESC LIMIT 0, 10[0m
+Rendering template within layouts/application
+Rendering blogs/index
+  [4;36;1mBlog Columns (0.002492)[0m   [0;1mSHOW FIELDS FROM `blogs`[0m
+  [4;35;1mTag Load (0.000442)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN taggings ON tags.id = taggings.tag_id WHERE ((`taggings`.taggable_type = 'Blog') AND (`taggings`.taggable_id = 4)) [0m
+  [4;36;1mTag Load (0.001676)[0m   [0;1mSELECT tags.id, tags.name, COUNT(*) AS count FROM `tags` INNER JOIN taggings ON tags.id = taggings.tag_id INNER JOIN blogs ON blogs.id = taggings.taggable_id WHERE (((tags.name LIKE 'Ending' OR tags.name LIKE 'music')) AND taggings.taggable_type = 'Blog') GROUP BY tags.id, tags.name HAVING COUNT(*) > 0[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT tags.id, tags.name, COUNT(*) AS count FROM `tags` INNER JOIN taggings ON tags.id = taggings.tag_id INNER JOIN blogs ON blogs.id = taggings.taggable_id WHERE (((tags.name LIKE 'Ending' OR tags.name LIKE 'music')) AND taggings.taggable_type = 'Blog') GROUP BY tags.id, tags.name HAVING COUNT(*) > 0[0m
+  [4;36;1mTag Load (0.000299)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN taggings ON tags.id = taggings.tag_id WHERE ((`taggings`.taggable_type = 'Blog') AND (`taggings`.taggable_id = 3)) [0m
+  [4;35;1mTag Load (0.000223)[0m   [0mSELECT `tags`.* FROM `tags` INNER JOIN taggings ON tags.id = taggings.tag_id WHERE ((`taggings`.taggable_type = 'Blog') AND (`taggings`.taggable_id = 2)) [0m
+  [4;36;1mTag Load (0.001563)[0m   [0;1mSELECT tags.id, tags.name, COUNT(*) AS count FROM `tags` INNER JOIN taggings ON tags.id = taggings.tag_id INNER JOIN blogs ON blogs.id = taggings.taggable_id WHERE (((tags.name LIKE 'test')) AND taggings.taggable_type = 'Blog') GROUP BY tags.id, tags.name HAVING COUNT(*) > 0[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT tags.id, tags.name, COUNT(*) AS count FROM `tags` INNER JOIN taggings ON tags.id = taggings.tag_id INNER JOIN blogs ON blogs.id = taggings.taggable_id WHERE (((tags.name LIKE 'test')) AND taggings.taggable_type = 'Blog') GROUP BY tags.id, tags.name HAVING COUNT(*) > 0[0m
+Rendered includes/_menu (0.00146)
+Rendered includes/_header (0.00460)
+  [4;36;1mMinibanner Load (0.000279)[0m   [0;1mSELECT * FROM `minibanners` [0m
+  [4;35;1mMinibanner Columns (0.002366)[0m   [0mSHOW FIELDS FROM `minibanners`[0m
+Rendered includes/_footer (0.00002)
+Completed in 0.08430 (11 reqs/sec) | Rendering: 0.06764 (80%) | DB: 0.00977 (11%) | 200 OK [http://localhost/blogs]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2009-01-02 04:23:19) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;36;1mContact Columns (0.002507)[0m   [0;1mSHOW FIELDS FROM `contacts`[0m
+  [4;35;1mContact Load (0.000304)[0m   [0mSELECT * FROM `contacts` WHERE (`contacts`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/index
+Rendered includes/_menu (0.00080)
+Rendered includes/_header (0.00385)
+  [4;36;1mMinibanner Load (0.000575)[0m   [0;1mSELECT * FROM `minibanners` [0m
+  [4;35;1mMinibanner Columns (0.001719)[0m   [0mSHOW FIELDS FROM `minibanners`[0m
+Rendered includes/_footer (0.00001)
+Completed in 0.06707 (14 reqs/sec) | Rendering: 0.05430 (80%) | DB: 0.00511 (7%) | 200 OK [http://localhost/contacts]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-01-02 04:23:26) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"action"=>"index", "controller"=>"products"}
+  [4;36;1mProduct Load (0.000328)[0m   [0;1mSELECT * FROM `products` ORDER BY created_at DESC LIMIT 0, 10[0m
+Rendering template within layouts/application
+Rendering products/index
+Rendered includes/_menu (0.00082)
+Rendered includes/_header (0.00303)
+  [4;35;1mMinibanner Load (0.000277)[0m   [0mSELECT * FROM `minibanners` [0m
+  [4;36;1mMinibanner Columns (0.002874)[0m   [0;1mSHOW FIELDS FROM `minibanners`[0m
+Rendered includes/_footer (0.00002)
+Completed in 0.06632 (15 reqs/sec) | Rendering: 0.05558 (83%) | DB: 0.00348 (5%) | 200 OK [http://localhost/products]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2009-01-02 04:23:29) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;35;1mContact Columns (0.002660)[0m   [0mSHOW FIELDS FROM `contacts`[0m
+  [4;36;1mContact Load (0.000288)[0m   [0;1mSELECT * FROM `contacts` WHERE (`contacts`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/index
+Rendered includes/_menu (0.00095)
+Rendered includes/_header (0.00546)
+  [4;35;1mMinibanner Load (0.000283)[0m   [0mSELECT * FROM `minibanners` [0m
+  [4;36;1mMinibanner Columns (0.002414)[0m   [0;1mSHOW FIELDS FROM `minibanners`[0m
+Rendered includes/_footer (0.00002)
+Completed in 0.07051 (14 reqs/sec) | Rendering: 0.05695 (80%) | DB: 0.00565 (8%) | 200 OK [http://localhost/contacts]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-01-02 04:23:31) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"action"=>"index", "controller"=>"products"}
+  [4;35;1mProduct Load (0.000353)[0m   [0mSELECT * FROM `products` ORDER BY created_at DESC LIMIT 0, 10[0m
+Rendering template within layouts/application
+Rendering products/index
+Rendered includes/_menu (0.00075)
+Rendered includes/_header (0.00296)
+  [4;36;1mMinibanner Load (0.000275)[0m   [0;1mSELECT * FROM `minibanners` [0m
+  [4;35;1mMinibanner Columns (0.006654)[0m   [0mSHOW FIELDS FROM `minibanners`[0m
+Rendered includes/_footer (0.00001)
+Completed in 0.13627 (7 reqs/sec) | Rendering: 0.12207 (89%) | DB: 0.00728 (5%) | 200 OK [http://localhost/products]
+
+
+Processing PortfoliosController#index (for 127.0.0.1 at 2009-01-02 04:23:33) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"action"=>"index", "controller"=>"portfolios"}
+  [4;36;1mPortfolio Load (0.000350)[0m   [0;1mSELECT * FROM `portfolios` ORDER BY created_at DESC LIMIT 0, 10[0m
+Rendering template within layouts/application
+Rendering portfolios/index
+  [4;35;1mPortfolio Columns (0.002660)[0m   [0mSHOW FIELDS FROM `portfolios`[0m
+  [4;36;1mTag Load (0.000412)[0m   [0;1mSELECT `tags`.* FROM `tags` INNER JOIN taggings ON tags.id = taggings.tag_id WHERE ((`taggings`.taggable_type = 'Portfolio') AND (`taggings`.taggable_id = 1)) [0m
+  [4;35;1mTag Load (0.001732)[0m   [0mSELECT tags.id, tags.name, COUNT(*) AS count FROM `tags` INNER JOIN taggings ON tags.id = taggings.tag_id INNER JOIN portfolios ON portfolios.id = taggings.taggable_id WHERE (((tags.name LIKE 'fsdfsdf')) AND taggings.taggable_type = 'Portfolio') GROUP BY tags.id, tags.name HAVING COUNT(*) > 0[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT tags.id, tags.name, COUNT(*) AS count FROM `tags` INNER JOIN taggings ON tags.id = taggings.tag_id INNER JOIN portfolios ON portfolios.id = taggings.taggable_id WHERE (((tags.name LIKE 'fsdfsdf')) AND taggings.taggable_type = 'Portfolio') GROUP BY tags.id, tags.name HAVING COUNT(*) > 0[0m
+Rendered includes/_menu (0.00114)
+Rendered includes/_header (0.00486)
+  [4;35;1mMinibanner Load (0.000279)[0m   [0mSELECT * FROM `minibanners` [0m
+  [4;36;1mMinibanner Columns (0.002311)[0m   [0;1mSHOW FIELDS FROM `minibanners`[0m
+Rendered includes/_footer (0.00002)
+Completed in 0.07637 (13 reqs/sec) | Rendering: 0.06209 (81%) | DB: 0.00774 (10%) | 200 OK [http://localhost/portfolios]
+
+
+Processing AboutsController#index (for 127.0.0.1 at 2009-01-02 04:24:17) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZTY5NWIzYzEwMGRkNjc2MTI4MTM4NTViMmE2ZGQz
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--99cdb360da0c59a8ed4231b0757bf46950f7582e
+  Parameters: {"action"=>"index", "controller"=>"abouts"}
+  [4;35;1mAbout Columns (0.002413)[0m   [0mSHOW FIELDS FROM `abouts`[0m
+  [4;36;1mAbout Load (0.000350)[0m   [0;1mSELECT * FROM `abouts` WHERE (`abouts`.`id` = 1) LIMIT 1[0m
+  [4;35;1mBigbord Columns (0.001674)[0m   [0mSHOW FIELDS FROM `bigbords`[0m
+  [4;36;1mBigbord Load (0.001078)[0m   [0;1mSELECT * FROM `bigbords` WHERE (`bigbords`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering abouts/index
+Rendered includes/_menu (0.00076)
+Rendered includes/_header (0.00338)
+  [4;35;1mMinibanner Load (0.000282)[0m   [0mSELECT * FROM `minibanners` [0m
+  [4;36;1mMinibanner Columns (0.002325)[0m   [0;1mSHOW FIELDS FROM `minibanners`[0m
+Rendered includes/_footer (0.00002)
+Completed in 0.07622 (13 reqs/sec) | Rendering: 0.05501 (72%) | DB: 0.00812 (10%) | 200 OK [http://localhost/abouts]
