@@ -3,13 +3,13 @@
 
 <% for product in @products %>
 <p>
-<h2><span class="little"><%=product.created_at.to_s(:little)%></span><br/><%= link_to h(product.title), product_path(product)%> <%= edit_delete_link(edit_product_path(product), product) %></h2>  
+<h2><%= link_to h(product.title), product_path(product)%> <%= edit_delete_link(edit_product_path(product), product) %></h2>  
 <%=cut_text product.content, product_path(product), 1 %>
 <% product.tag_counts.each do |tag|%>
 	<%=link_to h(tag.name), tag_product_path(tag.name), :class=>"tag"%>
 <%end unless product.tag_counts.nil? %>
 </p>   
-<br/>
+
 <% end %>
 <p>
 	<%=will_paginate @products%>

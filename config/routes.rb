@@ -7,7 +7,7 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resource :session
 
-  map.root :controller => "abouts"
+  map.root :controller => "blogs"
   map.resources :blogs, :member => { :tag => :get }
   map.resources :abouts, :member => { :tag => :get, :update_bigbord => :put }
   map.resources :clients, :member => { :tag => :get }
@@ -15,6 +15,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :products, :member => { :tag => :get }
   map.resources :maps, :member => {:list => :get}
   map.resources :contacts
+  map.resources :images
   map.resources :minibanners
   
   # The priority is based upon order of creation: first created -> highest priority.

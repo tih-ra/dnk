@@ -30,4 +30,7 @@ module ApplicationHelper
   def logout_path
     logged_in? ? link_to("покинуть администрирование", "/logout") : ""
   end
+  def imagesuppl_path
+    logged_in? ? link_to("загрузить картинку", "/images") : ""
+  end
 end

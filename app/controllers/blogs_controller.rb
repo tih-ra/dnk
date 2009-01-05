@@ -22,6 +22,7 @@ class BlogsController < ApplicationController
                 :only => [:new, :edit])
   def index
     @blogs = Blog.paginate(:page => params[:page], :per_page=>10, :order => 'created_at DESC')
+    @bigbord = Bigbord.last
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @blogs }
@@ -29,13 +30,14 @@ class BlogsController < ApplicationController
   end
   def tag
     @blogs = Blog.paginate_tagged_with(params[:id], :page => params[:page], :per_page=>10, :order => 'created_at DESC')
+    @bigbord = Bigbord.last
     render :action=>:index
   end
   # GET /blogs/1
   # GET /blogs/1.xml
   def show
     @blog = Blog.find(params[:id])
-    
+    @bigbord = Bigbord.last
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @blog }

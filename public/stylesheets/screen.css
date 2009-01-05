@@ -44,16 +44,17 @@ hr.cut {
 	margin: 0;
 	display: none;
 }
+
 div.main_menu {
 	float: left;
 	clear: both;
 	padding-top: 35px;
 }
 div.main_menu img{
-	padding: 0;
-	margin: 0;
-	float: left;
+	
+	/*float: left;*/
 }
+
 #manage_video {
 	float: left;
 	width: 350px;

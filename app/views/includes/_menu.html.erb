@@ -1,35 +1,62 @@
-<%=link_to image_tag("about_company_#{params[:controller]=='abouts' ? '2' : '1'}.gif", 
-				:onmouseover=>"this.src='/images/about_company_2.gif'", 
+<div style="width:1001px;">
+<div style="float:left;">
+<%=link_to image_tag("about_company_#{params[:controller]=='abouts' ? '2' : '1'}.gif",
+ 				:onmouseover=>"this.src='/images/about_company_2.gif'", 
 				:onmouseout=>"this.src='/images/about_company_#{params[:controller]=='abouts' ? '2' : '1'}.gif'"), 
-				abouts_path%>
-<%=image_tag "separator.gif"%>
+				abouts_path-%>
+</div>
+<div style="float:left;">
+<%=image_tag "separator.gif"-%>
+</div>
+<div style="float:left;">
 <%=link_to image_tag("clients_#{params[:controller]=='clients' ? '2' : '1'}.gif", 
 				:onmouseover=>"this.src='/images/clients_2.gif'", 
 				:onmouseout=>"this.src='/images/clients_#{params[:controller]=='clients' ? '2' : '1'}.gif'"), 
-				clients_path%>
+				clients_path-%>
+</div>
+<div style="float:left;">
 <%=image_tag "separator.gif"%>
+</div>
+<div style="float:left;">
 <%=link_to image_tag("maps_#{params[:controller]=='maps' ? '2' : '1'}.gif", 
 				:onmouseover=>"this.src='/images/maps_2.gif'", 
 				:onmouseout=>"this.src='/images/maps_#{params[:controller]=='maps' ? '2' : '1'}.gif'"), 
 				maps_path%>
+			</div>
+			<div style="float:left;">
 <%=image_tag "separator.gif"%>
+</div>
+<div style="float:left;">
 <%=link_to image_tag("news_#{params[:controller]=='blogs' ? '2' : '1'}.gif", 
 				:onmouseover=>"this.src='/images/news_2.gif'", 
 				:onmouseout=>"this.src='/images/news_#{params[:controller]=='blogs' ? '2' : '1'}.gif'"), 
 				blogs_path%>
+				</div>
+				<div style="float:left;">
 <%=image_tag "separator.gif"%>
+</div>
+<div style="float:left;">
 <%=link_to image_tag("portfolio_#{params[:controller]=='portfolios' ? '2' : '1'}.gif", 
 				:onmouseover=>"this.src='/images/portfolio_2.gif'", 
 				:onmouseout=>"this.src='/images/portfolio_#{params[:controller]=='portfolios' ? '2' : '1'}.gif'"), 
 				portfolios_path%>
+				</div>
+				<div style="float:left;">
 <%=image_tag "separator.gif"%>
+</div>
+<div style="float:left;">
 <%=link_to image_tag("products_#{params[:controller]=='products' ? '2' : '1'}.gif", 
 				:onmouseover=>"this.src='/images/products_2.gif'", 
 				:onmouseout=>"this.src='/images/products_#{params[:controller]=='products' ? '2' : '1'}.gif'"), 
 				products_path%>
+				</div>
+				<div style="float:left;">
 <%=image_tag "separator.gif"%>
+</div>
+<div style="float:left;">
 <%=link_to image_tag("contacts_#{params[:controller]=='contacts' ? '2' : '1'}.gif", 
 				:onmouseover=>"this.src='/images/contacts_2.gif'", 
 				:onmouseout=>"this.src='/images/contacts_#{params[:controller]=='contacts' ? '2' : '1'}.gif'"), 
 				contacts_path%>
-
+</div>
+</div>

@@ -37,7 +37,7 @@ class AboutsController < ApplicationController
   private 
   def find_about
    @about = About.find_or_create_by_id(1)
-   @bigbord = Bigbord.last
+   
   end
   
 end
