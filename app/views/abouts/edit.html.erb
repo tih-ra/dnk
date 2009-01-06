@@ -2,7 +2,10 @@
 
 <% form_for :bigbord, :url=>abouts_path, :html => { :multipart => true } do |f| %>
   <%= f.error_messages %>
-
+  <p>
+    <%= f.label "URL" %><br />
+    <%= f.text_field :title, :style=>"width:400px" %>
+  </p>
   <p>
     <%= f.label "Файл" %><br />
     <%= f.file_field :uploaded_data %>

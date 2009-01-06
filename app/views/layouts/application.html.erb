@@ -1,7 +1,7 @@
 <%=render :partial => "includes/header"%>
 <div class="column span-24 first last">
 <div class="clear-10">&nbsp;</div>		
-		<%=image_tag @bigbord.public_filename if @bigbord and !@bigbord.filename.nil?%>
+		<%=link_to image_tag(@bigbord.public_filename), (@bigbord.title.nil? ? "/" : @bigbord.title) if @bigbord and !@bigbord.filename.nil?%>
 		<div class="column span-17 first" style="padding-left:25px;">
 			<%=yield%>
 				<div class="clear-10">&nbsp;</div>
