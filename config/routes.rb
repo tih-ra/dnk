@@ -7,7 +7,7 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resource :session
 
-  map.root :controller => "blogs"
+  map.root :controller => "welcome"
   map.resources :blogs, :member => { :tag => :get }
   map.resources :abouts, :member => { :tag => :get, :update_bigbord => :put }
   map.resources :clients, :member => { :tag => :get }

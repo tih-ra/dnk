@@ -8,7 +8,12 @@
 		</div>
 		<div class="column span-6 last">
 			<br/>
-			<br/>
+			<p style="padding-left:10px;">
+			<% Blog.tag_counts.each do |tag|%>
+				<%=link_to h(tag.name), tag_blog_path(tag.name), :class=>"left_link"%><br/>
+			<%end unless Blog.tag_counts.nil? %>
+			<%=link_to "Продукты", products_path, :class=>"left_link"%><br/>
+			</p>
 		<%=createbanner_link(new_minibanner_path) %><br/>
 		<% @minibanners = Minibanner.all%>
 		<% @minibanners.each do |minibanner|%>
@@ -16,6 +21,7 @@
 		 <%=minidelete_link(minibanner)%>
 		<br/>
 		<% end unless @minibanners.empty?%>
+		
 		</div>
 </div>
 <%=render :partial => "includes/footer"%>

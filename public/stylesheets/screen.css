@@ -36,6 +36,10 @@ span.little {
 a.tag {
 	color: #AEAEAE;
 }
+a.left_link {
+	color: #7c7c7c;
+	size: 14px;
+}
 span.big {
 	font-size: 22px;
 }
