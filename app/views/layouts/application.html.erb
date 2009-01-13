@@ -8,11 +8,13 @@
 		</div>
 		<div class="column span-6 last">
 			<br/>
+			<%=image_tag "categories.gif"%>
 			<p style="padding-left:10px;">
+			
 			<% Blog.tag_counts.each do |tag|%>
 				<%=link_to h(tag.name), tag_blog_path(tag.name), :class=>"left_link"%><br/>
 			<%end unless Blog.tag_counts.nil? %>
-			<%=link_to "Продукты", products_path, :class=>"left_link"%><br/>
+			<%=params[:controller]=="portfolios" ? link_to("Новости", blogs_path, :class=>"left_link") : link_to("Портфолио", portfolios_path, :class=>"left_link")%><br/>
 			</p>
 		<%=createbanner_link(new_minibanner_path) %><br/>
 		<% @minibanners = Minibanner.all%>

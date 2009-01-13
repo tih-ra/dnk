@@ -16,8 +16,11 @@ h1 {
 	background: url(/images/head.gif) no-repeat left top;
 }
 #footer {
-	margin-top: 10px;
-	height: 54px;
+	padding-top: 25px;
+	padding-left: 10px;
+	margin-top: 20px;
+	margin-bottom: -90px;
+	height: 76px;
 	background: url(/images/footer.gif) no-repeat left top;
 }
 div.about_title {
