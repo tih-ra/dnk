@@ -1,0 +1,17 @@
+<br/>
+<h1>Новости (<%= link_to image_tag("create.png"), new_blog_path %>)</h1>
+
+<% for blog in @blogs %>
+<p>
+<h2><%= link_to h(blog.title), blog_path(blog)%> (<%= link_to image_tag("edit.png"), edit_blog_path(blog) %> | <%= link_to image_tag("delete.png"), blog, :confirm => 'Are you sure?', :method => :delete %>)</h2>  
+<%=cut_text blog.content, blog_path(blog) %>
+<% blog.tag_counts.each do |tag|%>
+	<%=link_to h(tag.name), tag_blog_path(tag.name), :class=>"tag"%>
+<%end unless blog.tag_counts.nil? %>
+</p>   
+<br/>
+<% end %>
+<p>
+	<%=will_paginate @blogs%>
+</p>
+

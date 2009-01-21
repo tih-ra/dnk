@@ -1,0 +1,8 @@
+<p>
+<h2><%= link_to h(@about.title), about_path(@about)%> (<%= link_to image_tag("edit.png"), edit_about_path(@about) %> | <%= link_to image_tag("delete.png"), @about, :confirm => 'Are you sure?', :method => :delete %>)</h2>  
+<%= @about.content %>
+</p>
+
+
+<%= link_to 'Редактировать', edit_about_path(@about) %> |
+<%= link_to 'Назад', abouts_path %>

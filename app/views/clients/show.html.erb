@@ -1,0 +1,8 @@
+<p>
+<h2><%= link_to h(@client.title), client_path(@client)%> (<%= link_to image_tag("edit.png"), edit_client_path(@client) %> | <%= link_to image_tag("delete.png"), @client, :confirm => 'Are you sure?', :method => :delete %>)</h2>  
+<%= @client.content %>
+</p>
+
+
+<%= link_to 'Редактировать', edit_client_path(@client) %> |
+<%= link_to 'Назад', clients_path %>
