@@ -1,9 +1,21 @@
 h3.light {
 	color: #5c5652;
 }
-body {
-	margin:10px 0 0 0;
-	text-align:left;
+html, body, #wrap {height: 100%;}
+
+body > #wrap {height: auto; min-height: 100%;}
+
+#main {padding-bottom: 76px;}  /* must be same height as the footer */
+
+#footer {position: relative;
+	margin-top: -76px; /* negative value of footer height */
+	height: 76px;
+	clear:both;
+	background: url(/images/footer.gif) no-repeat center center}
+#footer_child{
+	
+padding-left: 20px;
+padding-top: 35px;
 }
 h2 {
 	font-size: 16px;
@@ -14,14 +26,6 @@ h1 {
 #head {
 	height: 142px;
 	background: url(/images/head.gif) no-repeat left top;
-}
-#footer {
-	padding-top: 25px;
-	padding-left: 10px;
-	margin-top: 20px;
-	margin-bottom: -90px;
-	height: 76px;
-	background: url(/images/footer.gif) no-repeat left top;
 }
 div.about_title {
 	float: left;
@@ -145,6 +149,7 @@ div.blog_content img {
 a {
 	color: #0082DB;
 }
+
 #photo_thumbs {
 	float:left;
 	min-height: 387px;
