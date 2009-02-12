@@ -35,7 +35,7 @@ class PortfoliosController < ApplicationController
    # GET /portfolios/1.xml
    def show
      @portfolio = Portfolio.find(params[:id])
-
+     @title = @portfolio.title
      respond_to do |format|
        format.html # show.html.erb
        format.xml  { render :xml => @portfolio }
