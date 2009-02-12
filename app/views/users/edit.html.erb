@@ -1,0 +1,13 @@
+<% if flash[:notice] %>
+      <div class="notice"><%= flash[:notice] %></div>
+<% end %>
+<h1>Смаена пароля</h1>
+<% form_for :user, :url => user_path(@user), :html=>{:method=>:put} do |f| -%>
+<p><%= label_tag 'password', 'Пароль' %><br/>
+<%= f.password_field :password %></p>
+
+<p><%= label_tag 'password_confirmation', 'Подтверждение пароля' %><br/>
+<%= f.password_field :password_confirmation %></p>
+
+<p><%= submit_tag 'Сменить пароль' %></p>
+<% end -%>

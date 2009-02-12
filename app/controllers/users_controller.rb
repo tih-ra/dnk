@@ -1,7 +1,8 @@
 class UsersController < ApplicationController
   # Be sure to include AuthenticationSystem in Application Controller instead
   include AuthenticatedSystem
-  
+  before_filter :login_required
+  before_filter :find_user, :only=>[:edit, :update]
 
   # render new.rhtml
   def new
@@ -24,5 +25,19 @@ class UsersController < ApplicationController
       flash[:error]  = "We couldn't set up that account, sorry.  Please try again, or contact an admin (link is above)."
       render :action => 'new'
     end
+  end
+  def edit
+    
+  end
+  def update
+    @user.update_attributes(params[:user])
+    if @user.save
+      flash[:notice] = " Пароль успешно сменен"
+    end
+    redirect_to edit_user_path(@user)
+  end
+  private
+  def find_user
+    @user = User.find(params[:id])
   end
 end

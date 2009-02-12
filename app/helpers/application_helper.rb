@@ -33,4 +33,7 @@ module ApplicationHelper
   def imagesuppl_path
     logged_in? ? link_to("загрузить картинку", "/images") : ""
   end
+  def chpasswd_path
+    logged_in? ? link_to("поменять пароль", edit_user_path(current_user)) : ""
+  end
 end

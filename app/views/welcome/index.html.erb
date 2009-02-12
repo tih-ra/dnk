@@ -3,7 +3,8 @@
 <% for blog in @blogs %>
 <p>
 
-<h2 style="padding-top:-12px;margin-top:0;"><span class="little"><%=blog.created_at.to_s(:little)%></span><br/><%= link_to h(blog.title), blog_path(blog)%> <%= edit_delete_link(edit_blog_path(blog), blog) %></h2>  
+<h2 style="padding-top:-12px;margin-top:0;"><span class="little"><%=blog.created_at.to_s(:little)%></span><br/><%= link_to h(blog.title), blog_path(blog)%> 
+<%=blog.class.name=='Blob' ? edit_delete_link(edit_blog_path(blog), blog) : edit_delete_link(edit_portfolio_path(blog), blog) %></h2>  
 <%=cut_text blog.content, blog_path(blog) %>
 <% blog.tag_counts.each do |tag|%>
 	<%=link_to h(tag.name), tag_blog_path(tag.name), :class=>"tag"%>
